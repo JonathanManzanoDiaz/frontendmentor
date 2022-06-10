@@ -1,7 +1,7 @@
 # Challenges frontendmentor
 
 
-- [Frontendmentor.io web](https://jonathanmanzanodiaz.github.io/frontendmentor/nft-preview-card-component-main](https://www.frontendmentor.io/challenges)
+- [Frontendmentor.io web](https://www.frontendmentor.io/challenges)
 
 
 
