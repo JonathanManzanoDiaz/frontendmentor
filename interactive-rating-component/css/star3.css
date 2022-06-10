@@ -1,0 +1,209 @@
+/* =========== GOOGLE FONTS ============ */
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+/* =========== GOOGLE FONTS ============ */
+
+
+
+/* =========== COLORS ============ */
+
+:root {
+    --orange: hsl(25, 97%, 53%);
+    --white: hsl(0, 0%, 100%);
+    --light-grey: hsl(217, 12%, 63%);
+    --medium-grey: hsl(216, 12%, 54%);
+    --dark-blue: #1f2630;
+    --star: #262f38;
+    --very-dark-blue: hsl(216, 12%, 8%);
+
+}
+
+/* =========== COLORS ============ */
+
+
+/* =========== FONTS ============ */
+
+:root {    
+    --font-type: 'Overpass', sans-serif;
+    --font-size: 0.9rem;
+}
+
+/* =========== FONTS ============ */
+
+
+
+/* =========== STYLES ============ */
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* =========== STYLES ============ */
+
+/* =========== BODY ============ */
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-type);
+    background-color: var(--very-dark-blue);
+}
+
+
+/* =========== BODY ============ */
+
+
+/* =========== CONTAINER ============ */
+
+
+
+.container {
+    background: rgb(37,45,55);
+    background: linear-gradient(0deg, rgba(37,45,55,1) 0%, rgba(36,53,136,1) 100%);
+    width: 20.3125rem;
+    margin: 30vh 1.5625rem;
+    border-radius: 5%;
+    height: 22.5rem;
+    position: relative;
+}
+
+/* =========== CONTAINER ============ */
+
+
+/* =========== CARD ============ */
+
+.star {
+    position: absolute;
+    top: 25px;
+    left: 30px;
+    background: var(--dark-blue);
+    padding: 0.8rem 0.8rem 0.5rem 0.85rem;
+    border-radius: 1.8rem ;
+}
+
+.text-center h2 {    
+    position: absolute;
+    top: 40px;
+    font-size: 1.8rem;
+    font-weight: 400;
+    padding: 1.5625rem;
+    color: var(--white)
+}
+.text-center p {
+    position: absolute;
+    top: 120px;
+    font-size: var(--font-size);
+    padding: 0 1.1rem 0 1.5rem;
+    color: var(--medium-grey);
+}
+
+.numbers {
+    display: flex;
+}
+.number1 a{
+    position: absolute;
+    top: 13.5rem;
+    font-size: 1.5rem;
+    color: var(--light-grey);
+    left: 1.3rem;
+    padding: 0.6rem 1.1rem 0.3rem 1.1rem;
+    border-radius: 1.8rem ;    
+    background: var(--dark-blue);
+}
+.number2 a{
+    position: absolute;
+    top: 13.5rem;
+    font-size: 1.5rem;
+    color: var(--light-grey);
+    left: 5.1rem;
+    padding: 0.6rem 0.9rem 0.3rem 0.9rem;
+    border-radius: 1.8rem ;    
+    background: var(--dark-blue);
+}
+
+.number3 a{
+    position: absolute;
+    top: 13.5rem;
+    font-size: 1.5rem;
+    color: var(--white);
+    left: 8.8rem;
+    padding: 0.6rem 0.9rem 0.3rem 0.9rem;
+    border-radius: 1.8rem ;    
+    background: var(--orange);
+}
+
+.number4 a{
+    position: absolute;
+    top: 13.5rem;
+    font-size: 1.5rem;
+    color: var(--light-grey);
+    left: 12.5rem;
+    padding: 0.6rem 0.9rem 0.3rem 0.9rem;
+    border-radius: 1.8rem ;    
+    background: var(--dark-blue);
+}
+.number5 a{
+    position: absolute;
+    top: 13.5rem;
+    font-size: 1.5rem;
+    color: var(--light-grey);
+    left: 16.2rem;
+    padding: 0.6rem 0.9rem 0.3rem 0.9rem;
+    border-radius: 1.8rem ;    
+    background: var(--dark-blue);
+}
+
+.submit a {
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    top: 18.2rem;
+    left: 2.3rem;
+    background-color: var(--orange);
+    padding: .8rem 6rem;
+    border-radius: 25px;
+    letter-spacing: 1.5px;
+}
+
+li a:hover {
+    background-color: var(--light-grey);
+    color: white;
+}
+
+li a:active {
+    background-color: var(--orange);
+}
+
+.submit a:hover {
+    background-color: var(--light-grey);
+    color: white;
+}
+
+.submit a:link {
+    background-color: var(--orange);
+}
+.submit a:active {
+    background-color: var(--white);
+    color: var(--orange);
+}
+
+/* =========== CARD ============ */
+
+
+/* =========== MEDIA QUERIES ============ */
+
+@media screen and (min-width: 30rem){
+    .container {
+        margin: 25vh auto;
+    }
+    
+}
+
+/* =========== MEDIA QUERIES ============ */
+
