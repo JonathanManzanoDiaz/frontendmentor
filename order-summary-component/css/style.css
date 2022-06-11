@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+h1,
+h3,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --colorp_1: hsl(225, 100%, 94%);
+  --colorp_2: hsl(245, 75%, 52%);
+  --color_1: hsl(225, 100%, 98%);
+  --color_2: hsl(224, 23%, 55%);
+  --color_3: hsl(223, 47%, 23%);
+}
+
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  padding: 0;
+  margin: 0;
+  height: 99vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: var(--colorp_1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card_container {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 300px;
+  border-radius: 20px;
+}
+
+.card_container .hero_image {
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.card {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  grid-row: 2/4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.card .card_text {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.card .card_text h1 {
+  font-size: 22px;
+  margin-top: 2rem;
+  color: var(--color_3);
+  font-weight: 900;
+}
+
+.card .card_text p {
+  margin-top: 1rem;
+  padding: 0rem 1rem;
+  font-size: 16px;
+  color: var(--color_2);
+}
+
+.card .plan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 2rem auto 2rem auto;
+  width: 85%;
+  border-radius: 15px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 14px;
+  padding: 1rem .5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--color_1);
+}
+
+.card .plan .plan_div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-indent: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card .plan a {
+  color: var(--colorp_2);
+  font-weight: 700;
+}
+
+.card .plan img {
+  width: 40px;
+  height: 40px;
+}
+
+.proceed {
+  background-color: var(--colorp_2);
+  color: var(--color_1);
+  font-size: 14px;
+  font-weight: 900;
+  padding: .9rem 3.5rem;
+  -webkit-box-shadow: 0 4px 10px 2px var(--color_2);
+          box-shadow: 0 4px 10px 2px var(--color_2);
+  border: 0;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.cancel {
+  margin: 1rem;
+  color: var(--color_2);
+  font-size: 14px;
+  font-weight: 700;
+  padding: .8rem 3.5rem;
+  border: 0;
+  border-radius: 10px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.plan a:active {
+  color: var(--color_2);
+  text-decoration: none;
+}
+
+.proceed:active {
+  background-color: #766CF1;
+}
+
+.cancel:active {
+  color: var(--color_3);
+}
+
+.attribution {
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.attribution a {
+  font-weight: 900;
+  color: #3e52a3;
+  text-decoration: none;
+}
+
+.attribution a:hover {
+  color: var(--colorp_2);
+  text-decoration: underline;
+}
+
+@media (min-width: 40rem) {
+  .card_container {
+    width: 450px;
+    margin-top: 2rem;
+    height: 768px;
+  }
+  .card_container .card .card_text {
+    margin-top: 1rem;
+  }
+  .card_container .card .card_text h1 {
+    font-size: 30px;
+  }
+  .card_container .card .card_text p {
+    padding: 0 3.5rem;
+    font-size: 20px;
+  }
+  .card_container .card .plan {
+    width: 70%;
+    padding: 1.5rem 1rem;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-size: 100%;
+    margin-top: 3.5rem;
+  }
+  .card_container .card .plan h3 {
+    font-weight: 900;
+  }
+  .card_container .card .plan p {
+    color: var(--color_2);
+  }
+  .card_container .card .plan img {
+    width: 50px;
+    height: 50px;
+  }
+  .card_container .card .plan a {
+    font-size: 17px;
+  }
+  .card_container .card .proceed {
+    width: 350px;
+    font-size: 100%;
+    padding: 1.1rem;
+    margin-top: 1rem;
+  }
+  .card_container .card .cancel {
+    font-size: 110%;
+    margin-top: 2rem;
+  }
+  .attribution {
+    font-size: 22px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
