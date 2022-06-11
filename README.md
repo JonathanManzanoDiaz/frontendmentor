@@ -10,3 +10,4 @@
 
 - [NFT PREVIEW AND COMPONENT](https://jonathanmanzanodiaz.github.io/frontendmentor/nft-preview-card-component-main)
 
+- [ORDER SUMMARY COMPONENT](https://jonathanmanzanodiaz.github.io/frontendmentor/order-summary-component)
