@@ -9,4 +9,4 @@ CHALLENGES of frontendmentor.io
 
 - [ORDER SUMMARY COMPONENT](https://jonathanmanzanodiaz.github.io/frontendmentor/order-summary-component)
 
-- [PROFILE CARD COMPONENT](https://jonathanmanzanodiaz.github.io/frontendmentor/order-summary-component)
+- [PROFILE CARD COMPONENT](https://jonathanmanzanodiaz.github.io/frontendmentor/profile-card-component)
