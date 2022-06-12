@@ -6,4 +6,5 @@
 
 
 # CHALLENGES
-[To access the code change the branch to gh-pages](https://github.com/JonathanManzanoDiaz/frontendmentor/tree/gh-pages)
+
+[All my challenges and code](https://github.com/JonathanManzanoDiaz/frontendmentor/tree/gh-pages)
