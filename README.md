@@ -7,4 +7,4 @@
 
 # CHALLENGES
 
-[All my challenges and code](https://github.com/JonathanManzanoDiaz/frontendmentor/tree/gh-pages)
+[ALL MY CHALLENGES!](https://github.com/JonathanManzanoDiaz/frontendmentor/tree/gh-pages)
