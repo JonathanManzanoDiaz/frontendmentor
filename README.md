@@ -6,8 +6,4 @@
 
 
 # CHALLENGES
-
-
-- [NFT PREVIEW AND COMPONENT](https://jonathanmanzanodiaz.github.io/frontendmentor/nft-preview-card-component-main)
-
-- [ORDER SUMMARY COMPONENT](https://jonathanmanzanodiaz.github.io/frontendmentor/order-summary-component)
+[To access the code change the branch to gh-pages](https://github.com/JonathanManzanoDiaz/frontendmentor/tree/gh-pages)
