@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+
 :root {
   --color_bg: hsl(233, 47%, 7%);
   --color_ds: hsl(244, 38%, 16%);
@@ -13,7 +14,7 @@ body {
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   background-color: var(--color_bg);
   min-width: 16rem;
   font-family: 'Lexen Deco', sans-serif;
@@ -111,60 +112,69 @@ p {
     display: -ms-grid;
     display: grid;
     -ms-grid-rows: (1fr)[3];
-        grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
   }
+
   .card_container {
     -ms-grid-row: 2;
     -ms-grid-row-span: 1;
     grid-row: 2/3;
     width: 820px;
   }
+
   .card_container .img {
     display: none;
   }
+
   .card_container .card {
     width: 820px;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
+
   .card_container .card .img-desktop {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(170, 92, 219, 0.6))), url(/images/image-header-desktop.jpg);
-    background-image: linear-gradient(rgba(170, 92, 219, 0.6)), url(/images/image-header-desktop.jpg);
+    background-image: url(/images/image-header-desktop.jpg);
+    background-image: url(/images/image-header-desktop.jpg);
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-column: 2/3;
     -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
+    -ms-flex-order: 1;
+    order: 1;
     background-size: 100%;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     background-repeat: no-repeat;
   }
+
   .card_container .card .text_card h1 {
     margin-top: 2.5rem;
     text-align: left;
     padding: 0 3rem;
   }
+
   .card_container .card .text_card p {
     text-align: left;
     padding: 0 1.8rem 0 3rem;
     margin: 1.5rem 0;
   }
+
   .card_container .card .numbers {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
   }
+
   .attribution {
     -ms-grid-row: 3;
     -ms-grid-row-span: 1;
     grid-row: 3/4;
   }
 }
+
 /*# sourceMappingURL=style.css.map */
