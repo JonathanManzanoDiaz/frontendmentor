@@ -51,7 +51,7 @@ p {
     .img {
         width: 100%;
         height: 210px;
-        background: linear-gradient(hsla(277, 64%, 61%, 0.6)), url(/images/image-header-mobile.jpg);
+        background: linear-gradient(hsla(277, 64%, 61%, 0.6)), url(../images/image-header-mobile.jpg);
         background-size: 100%;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
@@ -73,7 +73,7 @@ p {
             h1 {
                 font-size: 24px;
                 padding: 0 1.5rem;
-                margin-top: 1rem;
+                margin-top: 2.5rem;
                 font-weight: 700;
 
                 span {
@@ -158,7 +158,7 @@ p {
             grid-template-columns: repeat(2, 1fr);
 
             .img-desktop {
-                background-image: linear-gradient(hsla(277, 64%, 61%, 0.6)), url(/images/image-header-desktop.jpg);
+                background-image: linear-gradient(hsla(277, 64%, 61%, 0.6)), url(../images/image-header-desktop.jpg);
                 grid-column: 2/3;
                 order: 1;
                 background-size: 100%;
