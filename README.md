@@ -6,9 +6,11 @@ CHALLENGES of frontendmentor.io
 
 - [NFT PREVIEW AND COMPONENT](https://jonathanmanzanodiaz.github.io/frontendmentor/nft-preview-card-component)
 
-
 - [ORDER SUMMARY COMPONENT](https://jonathanmanzanodiaz.github.io/frontendmentor/order-summary-component)
 
 - [PROFILE CARD COMPONENT](https://jonathanmanzanodiaz.github.io/frontendmentor/profile-card-component)
 
-- [STATS PREVIEW CARD COMPONENT](https://jonathanmanzanodiaz.github.io/frontendmentor/stats-preview-card-component)
+- [STATS PREVIEW CARD COMPONENT](https://jonathanmanzanodiaz.github.io/frontendmentor/stats-preview-card-component).
+
+- [FAQ ACCORDION CARD](https://jonathanmanzanodiaz.github.io/frontendmentor/stats-preview-card-component).
+
