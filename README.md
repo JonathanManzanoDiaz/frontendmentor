@@ -12,5 +12,5 @@ CHALLENGES of frontendmentor.io
 
 - [STATS PREVIEW CARD COMPONENT](https://jonathanmanzanodiaz.github.io/frontendmentor/stats-preview-card-component).
 
-- [FAQ ACCORDION CARD](https://jonathanmanzanodiaz.github.io/frontendmentor/stats-preview-card-component).
+- [FAQ ACCORDION CARD](https://jonathanmanzanodiaz.github.io/frontendmentor/faq-accordion-card).
 
