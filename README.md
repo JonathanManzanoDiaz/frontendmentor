@@ -14,3 +14,5 @@ CHALLENGES of frontendmentor.io
 
 - [FAQ ACCORDION CARD](https://jonathanmanzanodiaz.github.io/frontendmentor/faq-accordion-card).
 
+- [3 COLUMN PREVIEW CARD COMPONENT](https://jonathanmanzanodiaz.github.io/frontendmentor/3-column-preview-card-component).
+
