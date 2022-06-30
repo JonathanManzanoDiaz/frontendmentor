@@ -1,0 +1,187 @@
+:root {
+  --color_1: hsl(217, 19%, 35%);
+  --color_2: hsl(214, 17%, 51%);
+  --color_3: hsl(212, 23%, 69%);
+  --color_4: hsl(210, 46%, 95%);
+}
+
+h1,
+h4,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+  background-color: var(--color_4);
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card_container {
+  border-radius: 10px;
+  width: 21rem;
+  background-color: white;
+}
+.card_container .img-header {
+  height: 200px;
+  background-image: url("../images/drawers.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.card_container .card {
+  position: relative;
+}
+.card_container .card h1 {
+  padding: 1.8rem 2rem 0;
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--color_1);
+}
+.card_container .card p {
+  font-size: 0.9rem;
+  padding: 1.2rem 2rem;
+  font-family: "Manrope", sans-serif;
+  color: var(--color_2);
+  font-weight: 500;
+  line-height: 1.4;
+}
+.card_container .card .footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+}
+.card_container .card .footer .perfil {
+  display: flex;
+  text-indent: 20px;
+}
+.card_container .card .footer .perfil img {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+}
+.card_container .card .footer .perfil .text_f h4 {
+  margin: 0;
+  padding: 0;
+  color: var(--color_1);
+}
+.card_container .card .footer .perfil .text_f p {
+  margin: 0;
+  padding: 0.2rem 0;
+  color: var(--color_3);
+}
+.card_container .card .footer span img {
+  width: 16px;
+  height: 16px;
+  padding: 8px;
+  background-color: var(--color_4);
+  border-radius: 20px;
+  cursor: pointer;
+}
+.card_container .card .hidden {
+  display: none !important;
+}
+.card_container .card .sharing {
+  background-color: var(--color_1);
+  height: 70px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+.card_container .card .sharing .social img {
+  margin-right: 0.8rem;
+  cursor: pointer;
+}
+.card_container .card .sharing #share-hidden img {
+  background-color: var(--color_2);
+  padding: 10px 9px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+.card_container .card .sharing span {
+  letter-spacing: 4px;
+  font-size: 0.9rem;
+  color: var(--color_3);
+}
+
+@media (min-width: 90rem) {
+  .card_container {
+    width: 800px;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+  }
+  .card_container .img-header {
+    height: 100%;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 10px;
+  }
+  .card_container .card h1 {
+    font-size: 115%;
+  }
+  .card_container .card p {
+    font-size: 100%;
+  }
+  .card_container .card .footer #share {
+    margin-left: 10rem;
+  }
+  .card_container .card .sharing {
+    position: absolute;
+    bottom: 90px;
+    right: -78px;
+    width: 250px;
+    border-radius: 10px;
+    height: 45px;
+    z-index: 9;
+    box-shadow: 0 0 10px 0 grey;
+  }
+  .card_container .card .sharing #share-hidden {
+    display: none;
+  }
+  .card_container .card .sharing span {
+    margin-left: 1rem;
+  }
+  .card_container .card .sharing .social {
+    margin-left: 1rem;
+    z-index: 9;
+  }
+  .card_container .card .hid {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: var(--color_1);
+    position: absolute;
+    bottom: -10px;
+    transform: rotate(45deg);
+  }
+}
+.attribution {
+  margin-top: 2rem;
+  font-size: 18px;
+  text-align: center;
+}
+
+.attribution a {
+  color: blue;
+  text-decoration: none;
+}
+
+.attribution a:hover {
+  font-weight: 700;
+  text-decoration: underline;
+}/*# sourceMappingURL=style.css.map */
