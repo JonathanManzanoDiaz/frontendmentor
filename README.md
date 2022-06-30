@@ -18,3 +18,5 @@ CHALLENGES of frontendmentor.io
 
 - [FOUR CARD FEATURE SECTION](https://jonathanmanzanodiaz.github.io/frontendmentor/four-card-feature-section).
 
+- [ARTICLE PREVIEW COMPONENT](https://jonathanmanzanodiaz.github.io/frontendmentor/article-preview-component).
+
