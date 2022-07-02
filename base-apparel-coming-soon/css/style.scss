@@ -1,0 +1,231 @@
+// TYPOGRAPHY
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+// Colors
+
+:root {
+    // Primary
+
+    --color_1: hsl(0, 36%, 70%);
+    --color_2: hsl(0, 93%, 68%);
+
+    // Neutral
+
+    --color_3: hsl(0, 6%, 24%);
+
+    // Gradients
+
+    --color_4: linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(255, 245, 245, 1) 100%);
+    --color_5: linear-gradient(135deg, rgba(246, 188, 188, 1) 0%, rgba(238, 140, 140, 1) 100%);
+
+}
+
+
+//RESET
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+// STYLE PAGE
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    min-width: 320px;
+}
+
+.card_container {
+
+    background: var(--color_4), var(--color_5);
+    position: relative;
+
+    .logo2 {
+        display: none;
+    }
+
+    .logo1 {
+        width: 128px;
+        padding: 1.5rem;
+    }
+
+    .header-img1 {
+        background-image: url('../images/hero-mobile.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+        width: 100%;
+        height: 250px;
+    }
+
+    .card {
+        margin-top: 4rem;
+
+        h1 {
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 3rem;
+            letter-spacing: 8px;
+            font-weight: 600;
+            color: var(--color_3);
+
+            span {
+                color: var(--color_1);
+                font-weight: 300;
+
+            }
+        }
+
+        p {
+            line-height: 1.8;
+            color: var(--color_1);
+            text-align: center;
+
+            width: 80%;
+            margin: 1.5rem auto;
+        }
+    }
+
+    .input {
+        margin-top: 2rem;
+        text-align: center;
+        position: relative;
+
+        input {
+            font-size: 1rem;
+            border: 1px solid grey;
+            background-color: var(--color_5);
+            outline: 0;
+            padding: 1rem 1.5rem;
+            border-radius: 40px;
+            width: 80%;
+
+
+        }
+
+        input::placeholder {
+            color: var(--color_1)
+        }
+
+        input:focus {
+            border: 1px solid var(--color_3);
+        }
+
+    }
+
+    padding-bottom: 2rem;
+}
+
+
+//BUTTON
+.myButton {
+    box-shadow: 0px 4px 14px 0px grey;
+    background-color: var(--color_2);
+    border-radius: 25px;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 13px 30px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #3d768a;
+    border: 0;
+    position: absolute;
+    right: 38px;
+
+    img {
+        margin-top: 3px;
+    }
+}
+
+.header-img2 {
+    display: none;
+    background-image: url('../images/hero-desktop.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+}
+
+//MQUERIES 
+
+@media (min-width: 48rem) {
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+    }
+
+    .card_container {
+        width: 48rem;
+        display: flex;
+        height: 40rem;
+        border-radius: 5px;
+        box-shadow: 0px 1px 5px 0px black;
+        padding-bottom: 0rem;
+
+        .card {
+            h1 {
+                text-align: left;
+                margin: 4rem 4rem 0 4rem;
+            }
+
+            input {
+                width: 300px;
+            }
+
+            p {
+                text-align: left;
+                width: 300px;
+                margin-left: 4rem;
+            }
+
+        }
+
+        .logo1 {
+            display: none;
+        }
+
+        .logo2 {
+            display: block;
+            position: absolute;
+            top: 30px;
+            left: 60px;
+            width: 120px;
+            height: 25px;
+        }
+    }
+
+    .header-img1 {
+        display: none;
+    }
+
+    .header-img2 {
+        display: block;
+        order: 1;
+    }
+
+
+}
+
+
+//ATRIBUTTION
+
+.attribution {
+    margin-top: 1.5rem;
+    font-size: 18px;
+    text-align: center;
+}
+
+.attribution a {
+    text-decoration: none;
+}
+
+.attribution a:hover {
+    color: darkviolet;
+    text-decoration: underline
+}

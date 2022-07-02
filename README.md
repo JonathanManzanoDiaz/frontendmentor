@@ -20,3 +20,4 @@ CHALLENGES of frontendmentor.io
 
 - [ARTICLE PREVIEW COMPONENT](https://jonathanmanzanodiaz.github.io/frontendmentor/article-preview-component).
 
+- [BASE APPAREL COMING SOON](https://jonathanmanzanodiaz.github.io/frontendmentor/base-apparel-coming-soon).
