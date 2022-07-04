@@ -23,3 +23,5 @@ CHALLENGES of frontendmentor.io
 - [BASE APPAREL COMING SOON](https://jonathanmanzanodiaz.github.io/frontendmentor/base-apparel-coming-soon).
 
 - [PRODUCT PREVIEW CARD COMPONENT](https://jonathanmanzanodiaz.github.io/frontendmentor/product-preview-card-component).
+
+- [SOCIAL PROOF SECTION](https://jonathanmanzanodiaz.github.io/frontendmentor/social-proof-section).
