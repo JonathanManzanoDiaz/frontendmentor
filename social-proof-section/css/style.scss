@@ -193,10 +193,16 @@ main {
 // ATRIBUTTION
 
 .attribution {
-    font-size: 11px;
+    font-size: 18px;
     text-align: center;
 }
 
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: skyblue;
+    text-decoration: none;
+}
+
+.attribution a:hover {
+    color: darkviolet;
+    text-decoration: underline
 }
