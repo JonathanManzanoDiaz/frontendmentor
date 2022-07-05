@@ -25,3 +25,5 @@ CHALLENGES of frontendmentor.io
 - [PRODUCT PREVIEW CARD COMPONENT](https://jonathanmanzanodiaz.github.io/frontendmentor/product-preview-card-component).
 
 - [SOCIAL PROOF SECTION](https://jonathanmanzanodiaz.github.io/frontendmentor/social-proof-section).
+
+- [SINGLE PRICE GRID COMPONENT](https://jonathanmanzanodiaz.github.io/frontendmentor/single-price-grid-component).

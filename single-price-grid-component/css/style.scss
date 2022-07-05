@@ -1,0 +1,154 @@
+// TYPOGRAPHY
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+// COLORS 
+
+:root {
+    // Primary
+
+    --color_1: hsl(179, 62%, 43%);
+    --color_2: hsl(71, 73%, 54%);
+
+    // Neutral
+
+    --color_n1: hsl(204, 43%, 93%);
+    --color_n2: hsl(218, 22%, 67%);
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color_n1);
+}
+
+.card_container {
+    border-radius: 10px;
+    background-color: white;
+
+    .card1 {
+        margin: 1.8rem 2.5rem 2rem;
+
+        h1 {
+            font-size: 1.25rem;
+            color: var(--color_1)
+        }
+
+        h2 {
+            margin-top: 1.5rem;
+            color: var(--color_2);
+            font-size: 16px
+        }
+
+        p {
+            color: var(--color_n2);
+            line-height: 1.7;
+            font-size: .95rem;
+        }
+    }
+
+    .card2 {
+        background-color: var(--color_1);
+        color: white;
+        padding: .5rem 2rem;
+        font-size: .95rem;
+        font-weight: 400;
+        height: 225px;
+        padding-bottom: 0;
+
+        span {
+            font-size: 2rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+
+            span {
+                font-size: 1rem;
+                font-weight: 400;
+                color: var(--color_n1);
+                margin-left: 1rem;
+            }
+        }
+
+        .btn {
+            margin-top: .5rem;
+            padding: .92rem;
+            border-radius: 5px;
+            background-color: var(--color_2);
+            color: white;
+            text-decoration: none;
+            border: 0;
+            width: 100%;
+            font-size: 1rem;
+        }
+    }
+
+    .card3 {
+        background-color: var(--color_n2);
+        padding: .5rem 2rem;
+
+        h3 {
+            color: white;
+        }
+
+        p {
+            color: var(--color_n1);
+            font-size: .9rem;
+            line-height: 1.5
+        }
+    }
+}
+
+
+// MQUERIES
+
+@media(min-width: 48rem) {
+    .card_container {
+        width: 38rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 auto;
+
+        .card1 {
+            grid-column: span 2;
+        }
+
+        .card2 {
+            border-bottom-left-radius: 8px;
+            height: 233px;
+        }
+
+        .card3 {
+            border-bottom-right-radius: 8px;
+            height: 225px;
+        }
+    }
+
+
+}
+
+
+// ATRIBUTTION
+
+.attribution {
+    font-size: 18px;
+    text-align: center;
+}
+
+.attribution a {
+    color: red;
+    text-decoration: none;
+}
+
+
+.attribution a:hover {
+    color: darkviolet;
+    text-decoration: underline;
+    font-weight: 700;
+}
