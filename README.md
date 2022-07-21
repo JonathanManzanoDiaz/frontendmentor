@@ -27,3 +27,5 @@ CHALLENGES of frontendmentor.io
 - [SOCIAL PROOF SECTION](https://jonathanmanzanodiaz.github.io/frontendmentor/social-proof-section).
 
 - [SINGLE PRICE GRID COMPONENT](https://jonathanmanzanodiaz.github.io/frontendmentor/single-price-grid-component).
+
+- [PING COMING SOON PAGE](https://jonathanmanzanodiaz.github.io/frontendmentor/ping-coming-soon-page).
