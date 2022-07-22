@@ -1,0 +1,182 @@
+// COLOR AND TYPOGRAPHY
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+:root {
+    // Primary
+
+    --violet: hsl(257, 40%, 49%);
+    --soft: hsl(300, 69%, 71%);
+}
+
+
+// RESET START
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+// RESET END
+
+body {
+    background-image: url('../images/bg-mobile.svg');
+    background-repeat: no-repeat;
+    background-color: var(--violet);
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    img {
+        width: 120px;
+        margin: 1.5rem .5rem;
+    }
+}
+
+main {
+    text-align: center;
+
+    img {
+        width: 90%;
+        margin-top: 1rem;
+
+    }
+
+    h1 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 24px;
+        margin-top: 2rem;
+        color: white;
+        font-weight: 600;
+        padding: .5rem;
+    }
+
+    p {
+        font-family: 'Open Sans', sans-serif;
+        padding: 1rem;
+        color: rgb(213, 206, 206);
+        font-size: 15px;
+        line-height: 1.3;
+    }
+
+    button {
+        margin-top: .5rem;
+        padding: .6rem 4rem;
+        border-radius: 20px;
+        border: 0;
+        font-size: 16px;
+        font-weight: 400;
+        color: var(--soft);
+        background-color: white;
+    }
+
+    button:hover {
+        font-weight: 600;
+    }
+}
+
+.social {
+    margin-top: 2rem;
+    text-align: center;
+
+    i {
+        margin: .5rem;
+        border: 1px solid white;
+        font-size: 18px;
+        border-radius: 30px;
+        padding: .5rem;
+        color: white;
+    }
+
+}
+
+// MQUERIES START
+
+@media (min-width: 64rem) {
+    header {
+        margin-top: 2rem;
+
+        img {
+            margin-top: 2rem;
+            width: 200px;
+        }
+    }
+
+    main {
+        text-align: left;
+        display: flex;
+        align-items: center;
+
+        .lel {
+            margin: 4rem;
+            width: 50%;
+
+            h1 {
+
+                padding: 0;
+                margin: 0;
+                margin: 0 4rem;
+                padding: 0 2rem 0 0;
+                font-size: 35px;
+                font-weight: 600;
+            }
+
+            p {
+                padding: 0;
+                margin: 0;
+                margin: 0 4rem;
+                font-size: 16px;
+                margin-top: 1rem;
+            }
+
+            button {
+                margin: 0;
+                padding: 0;
+                margin: 0 4rem;
+                margin-top: 1.5rem;
+
+                padding: .8rem 3rem;
+                font-weight: 400;
+            }
+        }
+
+
+        img {
+            width: 65%;
+            margin-top: 1rem;
+
+        }
+    }
+
+    footer {
+        position: absolute;
+        bottom: 30px;
+        right: 30px;
+    }
+
+}
+
+
+// MQUERIES END
+
+
+// ATTRIBUTION
+.attribution {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 2rem;
+    color: white;
+}
+
+.attribution a {
+    color: skyblue;
+    text-decoration: none;
+}
+
+.attribution a:hover {
+    font-weight: 600;
+}

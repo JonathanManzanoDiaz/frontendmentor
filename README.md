@@ -29,3 +29,5 @@ CHALLENGES of frontendmentor.io
 - [SINGLE PRICE GRID COMPONENT](https://jonathanmanzanodiaz.github.io/frontendmentor/single-price-grid-component).
 
 - [PING COMING SOON PAGE](https://jonathanmanzanodiaz.github.io/frontendmentor/ping-coming-soon-page).
+
+- [HUDDLE LANDING PAGE WITH SINGLE INTRODUCTORY SECTION](https://jonathanmanzanodiaz.github.io/frontendmentor/huddle-landing-page-with-single-introductory-section).
