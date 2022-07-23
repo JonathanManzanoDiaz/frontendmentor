@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/app.js" defer></script>
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+</head>
+
+<body>
+  <main>
+    <div class="title">
+      <h1>Learn to code by watching others</h1>
+      <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+        but understanding how developers think is invaluable.</p>
+    </div>
+
+    <div class="card_container">
+      <button class="try"><strong>Try it free 7 days</strong> then $20/mo. thereafter</button>
+
+      <div class="card">
+        <form action="submit.html" method="GET">
+          <input class="field f1" type="text" placeholder="First Name" required><br>
+          <input class="field f2" type="text" placeholder="Last Name" required><br>
+          <input class="field f3" type="email" name="email" placeholder="Email" required><br>
+          <input class="field f4" type="password" placeholder="Password" required><br>
+          <button class="claim" type="submit" value="Submit">Claim your free trial</button><br><br>
+        </form>
+        <p class="terms">By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></p>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. <br>
+      Coded by <a href="https://github.com/JonathanManzanoDiaz">Jonathan Manzano Diaz</a>.
+    </p>
+  </footer>
+</body>
+
+</html>

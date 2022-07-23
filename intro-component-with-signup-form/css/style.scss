@@ -1,0 +1,215 @@
+// COLOR AND TYPOGRAPHY
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+    // Primary
+    --color_p1: hsl(0, 100%, 74%);
+    --color_p2: hsl(154, 59%, 51%);
+
+    // Accent
+    --color_a1: hsl(248, 32%, 49%);
+
+    // Neutral
+    --color_n1: hsl(249, 10%, 26%);
+    --color_n2: hsl(246, 25%, 77%);
+
+}
+
+// RESET
+
+a {
+    text-decoration: none;
+}
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+// STYLE PAGE
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--color_p1);
+    background-image: url('../images/bg-intro-mobile.png');
+}
+
+.title {
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+    margin-top: 2rem;
+
+    h1 {
+        font-size: 25px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
+
+.card_container {
+    width: 18rem;
+    margin: 0 auto;
+
+    .try {
+        padding: 1.2rem 3rem;
+        font-size: 14px;
+        background-color: var(--color_a1);
+
+        strong {
+            color: white;
+            font-weight: 600;
+        }
+
+        color: var(--color_n2);
+        font-weight: 500;
+        border: 0;
+        border-radius: 10px;
+        box-shadow: 0 6px 0 0 rgb(135, 117, 117);
+    }
+
+    .card {
+        margin-top: .8rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        background-color: white;
+        border-radius: 10px;
+        border: 1px solid grey;
+        padding: .9rem 1rem;
+
+        text-align: center;
+
+        input {
+            font-size: 14px;
+            padding: .85rem 1.7rem;
+            border-radius: 5px;
+            border: 1px solid var(--color_n2);
+            margin: .4rem;
+            font-weight: 700;
+        }
+
+        input:focus {
+            outline: 0;
+            border: 0;
+            border-radius: 0;
+            border-bottom: 1px solid black;
+            width: 95%;
+        }
+
+        input:required:focus:invalid {
+            background-image: url('../images/icon-error.svg');
+            background-repeat: no-repeat;
+            background-position: 97%;
+
+        }
+
+        .claim {
+            font-size: 12px;
+            text-transform: uppercase;
+            padding: .9rem 2rem;
+            font-weight: 700;
+            color: white;
+            background-color: var(--color_p2);
+            border: 0;
+            box-shadow: 0 1px 0 0 grey;
+            border-radius: 5px;
+            width: 95%;
+            margin-top: .5rem;
+        }
+
+        .terms {
+            font-size: 10px;
+            padding: 0 1rem;
+            margin-top: -1rem;
+            color: var(--color_n2);
+
+            a {
+                text-decoration: none;
+                color: red;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+
+// MQUERIES 
+@media (min-width: 48rem) {
+
+    main {
+        display: flex;
+        width: 1024px;
+        margin: 0 auto;
+        height: 80vh;
+        align-items: center;
+
+        .title {
+            width: 40%;
+            margin-left: 50px;
+            text-align: left;
+
+            h1 {
+                font-size: 35px;
+            }
+
+            p {
+                margin-top: 1rem;
+                padding-right: 2rem;
+            }
+        }
+
+        .card_container {
+            width: 450px;
+            margin-right: 50px;
+
+            .try {
+                width: 100%;
+                border-radius: 8px;
+            }
+
+            .card {
+                height: 400px;
+
+                form {
+                    width: 420px;
+
+                    input {
+                        font-size: 16px;
+                        width: 95%;
+                        margin: .5rem;
+                        margin-top: 1rem;
+                    }
+                }
+
+            }
+
+
+
+        }
+    }
+}
+
+// ATTRIBUTION
+
+.attribution {
+    margin: 1rem;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+}
+
+.attribution a {
+    color: darkblue;
+}
+
+.attribution a:hover {
+    color: darkviolet;
+    font-weight: 700;
+}
