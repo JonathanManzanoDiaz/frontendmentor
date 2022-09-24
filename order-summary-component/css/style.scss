@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+// RESET AND VARIABLES
+
+h1,
+h3,
+p {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+
+    --colorp_1: hsl(225, 100%, 94%);
+    --colorp_2: hsl(245, 75%, 52%);
+
+    // Neutral
+
+    --color_1: hsl(225, 100%, 98%);
+    --color_2: hsl(224, 23%, 55%);
+    --color_3: hsl(223, 47%, 23%);
+
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    padding: 0;
+    margin: 0;
+    height: 99vh;
+    box-sizing: border-box;
+    background-color: var(--colorp_1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+//GRID LAYOUT
+
+.card_container {
+    background-color: white;
+    display: flex;
+    width: 300px;
+    border-radius: 20px;
+
+    .hero_image {
+        width: 100%;
+
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+}
+
+.card {
+    grid-row: 2/4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    .card_text {
+        margin: 0 auto;
+        text-align: center;
+
+        h1 {
+            font-size: 22px;
+            margin-top: 2rem;
+            color: var(--color_3);
+            font-weight: 900;
+        }
+
+        p {
+            margin-top: 1rem;
+            padding: 0rem 1rem;
+            font-size: 16px;
+            color: var(--color_2)
+        }
+    }
+
+    .plan {
+        display: flex;
+        margin: 2rem auto 2rem auto;
+        width: 85%;
+        border-radius: 15px;
+        justify-content: space-around;
+        font-size: 14px;
+        padding: 1rem .5rem;
+        align-items: center;
+        background-color: var(--color_1);
+
+        .plan_div {
+            display: flex;
+            text-indent: 15px;
+            align-items: center;
+        }
+
+        a {
+            color: var(--colorp_2);
+            font-weight: 700;
+        }
+
+
+        img {
+            width: 40px;
+            height: 40px;
+
+        }
+    }
+}
+
+// BUTTONS
+.proceed {
+    background-color: var(--colorp_2);
+    color: var(--color_1);
+    font-size: 14px;
+    font-weight: 900;
+    padding: .9rem 3.5rem;
+    box-shadow: 0 4px 10px 2px var(--color_2);
+    border: 0;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.cancel {
+    margin: 1rem;
+    color: var(--color_2);
+    font-size: 14px;
+    font-weight: 700;
+    padding: .8rem 3.5rem;
+    border: 0;
+    border-radius: 10px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+//ACTIVE STATUS
+.plan a:active {
+    color: var(--color_2);
+    text-decoration: none;
+}
+
+.proceed:active {
+    background-color: #766CF1;
+}
+
+.cancel:active {
+    color: var(--color_3);
+}
+
+// ATTRIBUTION
+
+.attribution {
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.attribution a {
+    font-weight: 900;
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+}
+
+.attribution a:hover {
+    color: var(--colorp_2);
+    text-decoration: underline;
+}
+
+@media (min-width: 40rem) {
+    .card_container {
+        width: 450px;
+        margin-top: 2rem;
+
+        .card {
+            .card_text {
+                margin-top: 1rem;
+
+                h1 {
+                    font-size: 30px;
+                }
+
+                p {
+                    padding: 0 3.5rem;
+                    font-size: 20px;
+                }
+            }
+
+            .plan {
+                width: 70%;
+                padding: 1.5rem 1rem;
+                justify-content: space-between;
+                font-size: 100%;
+                margin-top: 3.5rem;
+
+                h3 {
+                    font-weight: 900;
+                }
+
+                p {
+                    color: var(--color_2);
+                }
+
+                img {
+                    width: 50px;
+                    height: 50px;
+                }
+
+                a {
+                    font-size: 17px;
+                }
+            }
+
+            .proceed {
+                width: 350px;
+                font-size: 100%;
+                padding: 1.1rem;
+                margin-top: 1rem;
+            }
+
+            .cancel {
+                font-size: 110%;
+                margin-top: 2rem;
+            }
+        }
+
+        height: 768px;
+    }
+
+    .attribution {
+        font-size: 22px;
+
+    }
+}

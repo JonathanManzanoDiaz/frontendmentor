@@ -1,0 +1,348 @@
+// TYPOGRAPHY AND COLOR START
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
+:root {
+
+    --color_p1: hsl(249, 99%, 64%) to hsl(278, 94%, 30%);
+    --color_p2: hsl(0, 100%, 66%);
+
+    // Neutral
+
+    --color_n1: hsl(0, 0%, 100%);
+    --color_n2: hsl(270, 3%, 87%);
+    --color_n3: hsl(279, 6%, 55%);
+    --color_n4: hsl(278, 68%, 11%);
+
+}
+
+
+// TYPOGRAPHY AND COLOR END
+
+// RESET START 
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    max-width: 70rem;
+    margin: 0 auto;
+
+}
+
+// RESET END
+
+
+header {
+
+    .background1 {
+        position: absolute;
+
+        width: 100%;
+        height: 200px;
+    }
+
+    .background2 {
+        display: none;
+    }
+
+    width: 100%;
+    height: 220px;
+
+    .card-body1 {
+        position: relative;
+
+        .card1 {
+            width: 250px;
+            height: 125px;
+            position: absolute;
+            top: 30px;
+            right: 15px;
+        }
+
+        .cvc {
+            color: white;
+            font-size: 12px;
+            position: absolute;
+            right: 45px;
+            top: 83px;
+        }
+    }
+
+    .card-body2 {
+        position: relative;
+
+        .cardlogo {
+            position: absolute;
+            top: 115px;
+            z-index: 1;
+            width: 45px;
+            left: 30px;
+        }
+
+        .card2 {
+            width: 240px;
+            height: 130px;
+            position: absolute;
+            top: 100px;
+            left: 13px;
+        }
+
+        .card_number {
+            position: absolute;
+            top: 170px;
+            z-index: 2;
+            font-size: 14.5px;
+            left: 30px;
+            color: white;
+            letter-spacing: 2px;
+        }
+
+        .card_name {
+            position: absolute;
+            top: 200px;
+            z-index: 2;
+            font-size: 10px;
+            left: 30px;
+            color: white;
+            letter-spacing: 1px;
+        }
+
+
+        .card_date {
+            color: white;
+            position: absolute;
+            font-size: 8px;
+            top: 202px;
+            left: 205px;
+        }
+    }
+
+}
+
+main {
+    margin-top: 3.5rem;
+    padding: 1rem;
+
+    label {
+        font-size: 13px;
+        font-weight: 500;
+        margin-top: .5rem;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+
+        .cardinfo {
+
+
+            #confirm {
+                margin-top: -.5rem;
+                height: 40px;
+                font-size: 15px;
+                width: 100%;
+                text-align: center;
+                background: var(--color_n4);
+                color: white;
+                border: 0;
+                border-radius: 5px;
+            }
+        }
+
+        input {
+            padding: .5rem;
+            border-radius: 5px;
+            border: 1px solid rgba(178, 233, 255, 0.733);
+            font-family: 'Space Grotesk', sans-serif;
+            color: rgb(255, 255, 255);
+            color: black;
+            margin-top: .3rem;
+        }
+
+
+        .cardinput {
+            display: flex;
+
+            input {
+                width: 50px;
+                margin: .3rem 0;
+                padding: .6rem;
+            }
+
+            input:last-child {
+                width: 140px;
+            }
+
+
+        }
+    }
+
+}
+
+.complete {
+    height: 50vh;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    button {
+        margin-top: 2rem;
+        font-size: 1.2rem;
+        background-color: var(--color_n4);
+        height: 45px;
+        width: 80%;
+        border: 0;
+        border-radius: 5px;
+
+        a {
+            color: white;
+            text-decoration: none;
+
+        }
+    }
+}
+
+
+// MQUERIES
+
+@media (min-width: 64rem) {
+    .complete {
+        justify-content: end;
+        margin-left: 5rem;
+        width: 500px;
+
+        button {
+            width: 65%;
+        }
+    }
+
+    header {
+
+        .background1 {
+            display: none
+        }
+
+        .background2 {
+            display: inline;
+            position: absolute;
+            width: 24rem;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            height: 800px;
+
+        }
+
+        .card-body1 {
+            position: relative;
+
+            .card1 {
+                width: 350px;
+                height: 200px;
+                position: absolute;
+                top: 400px;
+                left: 200px;
+            }
+
+            .cvc {
+                color: white;
+                z-index: 2;
+                font-size: 16px;
+                top: 488px;
+                left: 475px
+            }
+        }
+
+        .card-body2 {
+            position: relative;
+            width: 500px;
+
+            .card2 {
+                width: 350px;
+                height: 200px;
+                position: absolute;
+                top: 175px;
+                left: 135px;
+            }
+
+            .cardlogo {
+                top: 200px;
+                left: 160px;
+                width: 60px;
+            }
+
+            .card_number {
+                top: 280px;
+                left: 160px;
+                font-size: 21px;
+            }
+
+            .card_name {
+                font-size: 16px;
+                top: 330px;
+                left: 160px;
+            }
+
+            .card_date {
+
+                font-size: 16px;
+                top: 330px;
+                left: 405px;
+
+            }
+        }
+    }
+
+    body {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        height: 800px;
+        box-shadow: 0 0 4px gray;
+        margin-top: 3rem;
+        border-radius: 10px;
+    }
+
+    main {
+        width: 400px;
+        z-index: 1;
+        grid-row: 2/3;
+        grid-column: 4/4;
+        margin-top: -15rem;
+        margin-right: 5rem;
+
+        input {
+            font-size: 20px;
+        }
+
+        form {
+            .cardinfo {
+                .cardinput {
+                    input {
+                        width: 90px;
+                        margin-right: .5rem;
+                    }
+
+                    input:last-child {
+                        width: 170px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+input:focus {
+    outline: 0;
+    border: 0;
+    border-radius: 0;
+    border-bottom: 1px solid gray;
+}

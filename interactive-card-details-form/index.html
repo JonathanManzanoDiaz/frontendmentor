@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Interactive card details form</title>
+  <script src="js/app.js" async></script>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+</head>
+
+<body>
+
+  <header id="header">
+    <img class="background1" src="images/bg-main-mobile.png" alt="">
+    <img class="background2" src="images/bg-main-desktop.png" alt="">
+    <div class="card-body1">
+      <img class="card1" src="images/bg-card-back.png" alt="">
+      <span class="cvc">000</span>
+
+    </div>
+    <div class="card-body2">
+      <img class='cardlogo' src="images/card-logo.svg" alt="">
+      <img class="card2" src="images/bg-card-front.png" alt="">
+
+      <span class="card_number">0000 0000 0000 0000</span>
+      <span class="card_name">Jonathan Manzano</span>
+      <span class="card_date"> <span class="monthSpan">00</span>/<span class="yearSpan">00</span></span>
+    </div>
+  </header>
+  <main>
+    <form id="formulario">
+      <label for="cardholder">CARDHOLDER NAME</label>
+      <input id="cardHolder" oninput="inputCardHolder()" name="cardholder" type="text"
+        placeholder="e.g. Jonathan Manzano" required>
+
+      <label for="cardnumber">CARD NUMBER</label>
+      <input title="Wrong format, enter a valid card!" oninput="inputCardHolder()" id="cardNumber" name="cardnumber"
+        type="text" placeholder="e.g. 1234 5678 9123 0000" required minlength="20" maxlength="20" ">
+      <div class=" cardinfo">
+      <div class="cardlabel">
+        <label for="expdate">EXP.DATE</label>
+        <label for="year">(MM/YY)</label>
+        <label for="cvcdata">CVC</label>
+      </div>
+      <div class="cardinput">
+        <input oninput="inputCardHolder()" id="mm" name="expdate" type="number" placeholder="MM" required minlength="2"
+          maxlength="2">
+        <input oninput="inputCardHolder()" id="yy" name="year" type="number" placeholder="YY" required minlength="2"
+          maxlength="2">
+        <input oninput="inputCardHolder()" id="cvcDate" name="cvcdata" type="number" placeholder="e.g 123" required
+          minlength="3" maxlength="4">
+      </div>
+      <br>
+      <button id="confirm" type="submit">Confirm</button>
+      </div>
+
+    </form>
+  </main>
+
+  <!-- Completed state start -->
+  <div class="complete">
+    <img src="images/icon-complete.svg" alt="">
+    <h2 class="thanks show">Thank you!</h2>
+    <p class="thanks show">We've added your card details</p>
+    <button class="thanks show"><a class="linkContinue" href="index.html">Continue</a></button>
+
+  </div>
+
+
+</body>
+
+</html>

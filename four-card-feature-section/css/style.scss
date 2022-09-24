@@ -1,0 +1,197 @@
+// STYLES AND COLORS
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+:root {
+
+    --color_1: hsl(0, 78%, 62%);
+    --color_2: hsl(180, 62%, 55%);
+    --color_3: hsl(34, 97%, 64%);
+    --color_4: hsl(212, 86%, 64%);
+
+    // Neutral
+
+    --color_N1: hsl(234, 12%, 34%);
+    --color_N2: hsl(229, 6%, 66%);
+    --color_N3: hsl(0, 0%, 98%);
+
+}
+
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    width: 18rem;
+    margin: 0 auto;
+    padding: 3rem 0;
+    background-color: var(--color_N3);
+
+
+    h1 {
+        font-weight: 300;
+        color: var(--color_N1);
+        font-size: 23px;
+    }
+
+    p {
+        margin-top: 1rem;
+        color: var(--color_N2)
+    }
+
+
+}
+
+.card {
+    margin: 2rem auto 0 auto;
+}
+
+.card1 {
+    border-top: 4px solid var(--color_2);
+    border-radius: 7px;
+    background-color: white;
+    box-shadow: 0 0 4px 2px var(--color_2);
+    padding: 2rem;
+    position: relative;
+    height: 230px;
+
+    img {
+        position: absolute;
+        right: 25px;
+    }
+}
+
+.card2 {
+    border-top: 4px solid var(--color_1);
+    border-radius: 7px;
+    background-color: white;
+    box-shadow: 0 0 4px 2px var(--color_2);
+    padding: 2rem;
+    position: relative;
+    height: 230px;
+
+    img {
+        position: absolute;
+        right: 25px;
+    }
+}
+
+.card3 {
+    border-top: 4px solid var(--color_3);
+    border-radius: 7px;
+    background-color: white;
+    box-shadow: 0 0 4px 2px var(--color_2);
+    padding: 2rem;
+    position: relative;
+    height: 230px;
+
+    img {
+        position: absolute;
+        right: 25px;
+    }
+}
+
+.card4 {
+    border-top: 4px solid var(--color_4);
+    border-radius: 7px;
+    background-color: white;
+    box-shadow: 0 0 4px 2px var(--color_2);
+    padding: 2rem;
+    position: relative;
+    height: 230px;
+
+    img {
+        position: absolute;
+        right: 25px;
+    }
+}
+
+
+// M QUERIES
+
+@media (min-width: 64rem) {
+    body {
+        width: 64rem;
+        text-align: center;
+
+
+
+        header {
+            width: 600px;
+            margin: 0 auto;
+
+            h1 {
+                font-size: 35px;
+            }
+
+            p {
+                font-size: 18px;
+            }
+        }
+    }
+
+
+    .card_container {
+        display: grid;
+        grid-template-columns: repeat((3, 1fr));
+        grid-template-rows: repeat((4, 100px));
+        gap: 30px;
+        margin-top: 2rem;
+
+        h3 {
+            text-align: left;
+        }
+
+        p {
+            font-size: 14px;
+            text-align: left;
+            color: var(--color_N2);
+        }
+
+        img {
+            margin: 1rem;
+        }
+    }
+
+    .card1 {
+        grid-column: 1/2;
+        grid-row: 2/4;
+    }
+
+    .card2 {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .card3 {
+        grid-column: 2/3;
+        grid-row: 3/4
+    }
+
+    .card4 {
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+
+    .attribution a:hover {
+        color: blueviolet;
+        font-weight: 600;
+    }
+}
+
+
+// ATRIBUTTION
+.attribution {
+    margin-top: 5rem;
+    font-size: 18px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}

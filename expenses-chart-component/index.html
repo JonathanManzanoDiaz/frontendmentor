@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Expenses chart component</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/app.js" async></script>
+</head>
+
+<body>
+
+  <main>
+
+    <div class="card">
+      <div class="myBalance">
+        <div>
+          <p>My balance</p>
+          <h2>$921.48</h2>
+        </div><img src="images/logo.svg" alt="">
+      </div>
+      <div class="card-body">
+        <h1>Spending - Last 7 days</h1>
+        <div class="square">
+          <ul id="temp"></ul>
+          <template id="template">
+            <li><span class="day">Day</span>
+              <div class="bar">
+              </div>
+            </li>
+
+          </template>
+        </div>
+        <span class="itemS show">Month</span>
+        <hr>
+        <div class="total">
+          <div class="total1">
+            <p>Total this month</p>
+            <h2>$478.33</h2>
+          </div>
+          <div class="last">
+            <h5>+2.4%</h5>
+            <p>from last month</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. <br>
+      Coded by <a href="https://github.com/JonathanManzanoDiaz/frontendmentor/tree/gh-pages">Jonathan Manzano Diaz</a>.
+    </div>
+  </main>
+
+</body>
+
+</html>

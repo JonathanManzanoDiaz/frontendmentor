@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+:root {
+  --color_text1: hsl(238, 29%, 16%);
+  --color_text2: hsl(14, 88%, 65%);
+  --color_bg1: hsl(273, 75%, 66%);
+  --color_bg2: hsl(240, 73%, 65%);
+  --color_textN1: hsl(237, 12%, 33%);
+  --color_textN2: hsl(240, 6%, 50%);
+  --color_divisor: hsl(240, 5%, 91%)
+;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin-top: 50px;
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: 'Kumbh Sans', sans-serif;
+  background-color: var(--color_bg1);
+}
+
+.card_container {
+  width: 22rem;
+  -webkit-box-shadow: 0 0 4px 0 grey;
+          box-shadow: 0 0 4px 0 grey;
+  padding: 1rem;
+  border-radius: 20px;
+  background-color: white;
+  padding-bottom: 2rem;
+  position: relative;
+}
+
+.card_container .bg_img {
+  position: absolute;
+  top: -120px;
+  left: calc(50% - 130px);
+  width: 75%;
+}
+
+.card_container .bg_img1 {
+  position: absolute;
+  top: 0px;
+  left: calc(50% - 130px);
+  width: 75%;
+}
+
+.card_container h1 {
+  margin-top: 7rem;
+  text-align: center;
+  padding: 1rem;
+  color: var(--color_text1);
+}
+
+.card_container .card h3 {
+  color: var(--color_text1);
+  font-size: 1rem;
+}
+
+.card_container .card p {
+  color: var(--color_text2);
+}
+
+.card_container .hidden {
+  display: none;
+}
+
+.arrow {
+  width: 14px;
+  margin-left: 5px;
+}
+
+.bar {
+  margin: 1rem 0;
+  background-color: var(--color_divisor);
+  height: 2px;
+  width: 99%;
+}
+
+@media (min-width: 64rem) {
+  .card_container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    width: 60rem;
+  }
+  .card_container .bg_img {
+    width: 100%;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    top: calc(50% - 190px);
+    left: -90px;
+  }
+  .card_container .bg_img1 {
+    width: 100%;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    top: 55%;
+    left: -90px;
+  }
+  .card_container h1 {
+    margin: 2rem -1rem;
+    text-align: left;
+  }
+  .card_container .card {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+  }
+  .card_container .card h3 {
+    font-size: 1.4rem;
+  }
+  .card_container .card p {
+    font-size: 1.3rem;
+    margin-top: 1rem;
+  }
+  .card_container .card .bar {
+    width: 90%;
+  }
+  .card_container .card h3:hover {
+    color: var(--color_text2);
+    cursor: pointer;
+  }
+}
+
+.attribution {
+  font-size: 21px;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.attribution a {
+  color: yellow;
+  text-decoration: none;
+}
+
+.attribution a:hover {
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */

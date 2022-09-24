@@ -1,0 +1,222 @@
+// STYLES AND COLORS
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+    --color_1: hsl(31, 77%, 52%);
+    --color_2: hsl(184, 100%, 22%);
+    --color_3: hsl(179, 100%, 13%);
+
+    // Neutral
+
+    --color_p: hsla(0, 0%, 100%, 0.75);
+    --color_bg: hsl(0, 0%, 95%);
+
+}
+
+// RESET 
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+// PAGE STYLES
+.type {
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 30px;
+    padding: 1rem 0;
+    color: var(--color_bg);
+    text-transform: uppercase;
+}
+
+p {
+    font-family: 'Lexend Deca', sans-serif;
+    color: var(--color_p);
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.btn {
+    font-size: 14px;
+    border: 0;
+    background-color: var(--color_bg);
+    padding: .6rem 2rem;
+    border-radius: 20px;
+    font-family: 'Lexend Deca', sans-serif;
+    margin-top: 2rem;
+}
+
+
+
+.card_container {
+    width: 18rem;
+    max-width: 64rem;
+
+    .card1 {
+        padding: 2rem;
+        background-color: var(--color_1);
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+
+        .btn {
+            color: var(--color_1);
+
+        }
+    }
+
+    .card2 {
+        padding: 2rem;
+        background-color: var(--color_2);
+
+        .btn {
+            color: var(--color_2);
+
+        }
+
+    }
+
+    .card3 {
+        padding: 2rem;
+        background-color: var(--color_3);
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+
+        .btn {
+            color: var(--color_3);
+            margin-top: 2.5rem;
+        }
+    }
+}
+
+
+// ATRIBUTION
+
+.attr {
+    margin-top: 1rem;
+    font-size: 22px;
+    text-align: center;
+
+    p {
+        color: black;
+    }
+
+    a {
+        color: var(--color_2)
+    }
+
+    a:hover {
+        color: blue;
+    }
+}
+
+
+// MQUERIES
+
+@media (min-width: 64rem) {
+    body {
+        height: 100vh;
+    }
+
+    p {
+        padding: 2rem 1rem 5rem 1rem;
+    }
+
+    img {
+        padding: 1rem;
+
+    }
+
+    .type {
+        padding: 1rem;
+    }
+
+    .btn {
+        margin: 1rem;
+        border: 1px solid white;
+        outline: 0;
+
+    }
+
+    .btn:hover {
+        background-color: transparent;
+        transform: scale(1.1);
+        transition: all 0.2s;
+    }
+
+    .card_container {
+        display: flex;
+        flex-direction: row;
+        width: 60rem;
+
+        .card1 {
+            border-top-right-radius: 0px;
+            border-bottom-left-radius: 10px;
+            position: relative;
+
+            .btn:hover {
+                color: var(--color_bg);
+
+            }
+        }
+
+        .card2 {
+            position: relative;
+
+            .btn:hover {
+                color: var(--color_bg);
+
+            }
+        }
+
+        .card3 {
+            position: relative;
+
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 0px;
+
+            .btn:hover {
+                color: var(--color_bg);
+
+            }
+
+            p {
+                padding: 2rem 1rem 5rem 1rem;
+
+            }
+        }
+    }
+
+    .attr p {
+        font-size: 22px;
+    }
+
+}
+
+.close {
+    font-size: 50px;
+    color: white;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: black;
+    transform: scale(1.2);
+}
+
+.hidden {
+    display: none
+}

@@ -1,0 +1,186 @@
+// FONT
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+
+// COLORS
+:root {
+    // Text
+
+    --color_text1: hsl(238, 29%, 16%);
+    --color_text2: hsl(14, 88%, 65%);
+
+    // Gradient
+
+    // Background gradient:
+
+    --color_bg1: hsl(273, 75%, 66%);
+    --color_bg2: hsl(240, 73%, 65%);
+
+    // Neutral 
+    // Text 
+
+    --color_textN1: hsl(237, 12%, 33%);
+    --color_textN2: hsl(240, 6%, 50%);
+    // Dividers 
+    --color_divisor: hsl(240, 5%, 91%)
+}
+
+// RESET
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin-top: 50px;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: var(--color_bg1);
+}
+
+// SITE STYLES 
+
+.card_container {
+    width: 22rem;
+    box-shadow: 0 0 4px 0 grey;
+    padding: 1rem;
+    border-radius: 20px;
+    background-color: white;
+    padding-bottom: 2rem;
+    position: relative;
+
+    .bg_img {
+        position: absolute;
+        top: -120px;
+        left: calc(50% - 130px);
+        width: 75%;
+    }
+
+    .bg_img1 {
+        position: absolute;
+        top: 0px;
+        left: calc(50% - 130px);
+        width: 75%;
+    }
+
+    h1 {
+        margin-top: 7rem;
+        text-align: center;
+        padding: 1rem;
+        color: var(--color_text1);
+    }
+
+    .card {
+        h3 {
+            color: var(--color_text1);
+            font-size: 1rem;
+        }
+
+        p {
+            color: var(--color_text2);
+
+        }
+    }
+
+    .hidden {
+        display: none;
+    }
+
+}
+
+.arrow {
+    width: 14px;
+    margin-left: 5px;
+}
+
+
+.bar {
+    margin: 1rem 0;
+    background-color: var(--color_divisor);
+    height: 2px;
+    width: 99%;
+}
+
+
+
+// MEDIA QUERIES
+
+@media (min-width: 64rem) {
+    .card_container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 60rem;
+
+        .bg_img {
+            width: 100%;
+            grid-column: 1/2;
+            top: calc(50% - 190px);
+            left: -90px;
+        }
+
+        .bg_img1 {
+            width: 100%;
+            grid-column: 1/2;
+            top: 55%;
+            left: -90px;
+        }
+
+        h1 {
+            margin: 2rem -1rem;
+            text-align: left;
+        }
+
+
+
+        .card {
+
+            h3 {
+                font-size: 1.4rem;
+            }
+
+            p {
+                font-size: 1.3rem;
+                margin-top: 1rem;
+            }
+
+            .bar {
+                width: 90%;
+            }
+
+            h3:hover {
+                color: var(--color_text2);
+                cursor: pointer
+            }
+
+            grid-column: 2/3;
+        }
+    }
+
+
+}
+
+
+// ATRIBUTTION
+.attribution {
+    font-size: 21px;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.attribution a {
+    color: yellow;
+    text-decoration: none;
+}
+
+
+.attribution a:hover {
+    color: white;
+}

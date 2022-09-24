@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color_p1: hsl(10, 79%, 65%);
+  --color_p2: hsl(186, 34%, 60%);
+  --color_n1: hsl(25, 47%, 15%);
+  --color_n2: hsl(28, 10%, 53%);
+  --color_n3: hsl(27, 66%, 92%);
+  --color_n4: hsl(33, 100%, 98%);
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  background-color: var(--color_n3);
+}
+
+.attribution {
+  margin-top: 0.5rem;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+main {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main .card {
+  min-width: 18rem;
+}
+main .card .myBalance {
+  display: flex;
+  background-color: var(--color_p1);
+  padding: 1rem;
+  justify-content: space-between;
+  color: white;
+  border-radius: 10px;
+}
+main .card .myBalance div {
+  margin-left: 0.5rem;
+}
+main .card .myBalance img {
+  width: 60px;
+  margin-right: 0.5rem;
+}
+main .card .card-body {
+  background-color: var(--color_n4);
+  margin-top: 1rem;
+  border-radius: 8px;
+  position: relative;
+}
+main .card .card-body h1 {
+  font-size: 24px;
+  padding: 1rem;
+}
+main .card .card-body .square {
+  height: 150px;
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+}
+main .card .card-body .square li {
+  position: relative;
+  list-style: none;
+  width: 30px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+main .card .card-body .square li span {
+  position: absolute;
+  bottom: 0;
+  font-size: 18px;
+}
+main .card .card-body .square li .bar {
+  position: absolute;
+  bottom: 25px;
+  background-color: var(--color_p1);
+  border-radius: 3px;
+}
+main .card .card-body .itemS {
+  color: white;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 0.5rem 0.5rem;
+  border-radius: 6px;
+  z-index: 1;
+  font-size: 15px;
+  position: absolute;
+  top: 60px;
+  left: 15px;
+}
+main .card hr {
+  width: 85%;
+  margin: 1rem auto;
+  background-color: var(--color_n2);
+}
+main .card .total {
+  height: 4.5rem;
+  margin: 0 1rem 1rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+main .card .total h2 {
+  margin-top: 0.25rem;
+}
+main .card .total .last {
+  text-align: right;
+  position: absolute;
+  bottom: 12px;
+  right: 0;
+}
+main .card .total .last h2 {
+  font-size: 12px;
+}
+
+@media (min-width: 48rem) {
+  main {
+    width: 40rem;
+    margin: 0 auto;
+  }
+  main .card {
+    width: 24rem;
+  }
+}/*# sourceMappingURL=style.css.map */

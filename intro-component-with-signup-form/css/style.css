@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --color_p1: hsl(0, 100%, 74%);
+  --color_p2: hsl(154, 59%, 51%);
+  --color_a: hsl(248, 32%, 49%);
+  --color_n1: hsl(249, 10%, 26%);
+  --color_n2: hsl(246, 25%, 77%);
+}
+
+.show {
+  margin-top: 0.5rem;
+  text-align: right;
+  margin-right: 1rem;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.error1,
+.error2,
+.error3,
+.error4 {
+  font-size: 11px;
+}
+
+body {
+  background-image: url("../images/bg-intro-mobile.png");
+  background-color: var(--color_p1);
+  max-width: 80rem;
+  min-width: 18.5rem;
+}
+
+main .text-main {
+  text-align: center;
+  margin-top: 5rem;
+}
+main .text-main h1 {
+  color: white;
+  font-size: 1.8rem;
+}
+main .text-main p {
+  padding: 0 2rem;
+  font-size: 1rem;
+  color: white;
+  max-width: 550px;
+  margin: auto;
+  margin-top: 1rem;
+}
+main .card {
+  margin-top: 4rem;
+  width: 100%;
+  text-align: center;
+}
+main .card .tryBtn {
+  background-color: var(--color_a);
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  padding: 1rem 3.5rem;
+  max-width: 450px;
+  border: 0;
+  border-radius: 10px;
+  width: 85%;
+  font-family: "Poppins", sans-serif;
+  box-shadow: 0 7px 0px gray;
+  margin-bottom: 1.2rem;
+}
+main .card .tryBtn b {
+  font-size: 15px;
+}
+main .card .card-body {
+  max-width: 450px;
+  margin-top: 1rem;
+  width: 85%;
+  background-color: white;
+  padding: 1rem;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+main .card .card-body input:first-child {
+  margin-top: 0.5rem;
+}
+main .card .card-body input {
+  width: 95%;
+  font-weight: 700;
+  border: 1px solid skyblue;
+  border-radius: 5px;
+  padding: 1rem;
+  margin-top: 0.8rem;
+  font-size: 16px;
+}
+main .card .card-body input:focus {
+  outline: 0;
+  border: 0;
+  border-bottom: 1px solid blueviolet;
+  border-radius: 0;
+}
+main .card .card-body .invalidI {
+  background-image: url("../images/icon-error.svg");
+  background-repeat: no-repeat;
+  background-position: center right 10px;
+}
+main .card .card-body #claim {
+  color: white;
+  background-color: var(--color_p2);
+  border: 0;
+  border-radius: 5px;
+  margin-top: 0.8rem;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 1rem;
+  width: 95%;
+  box-shadow: 0 3px 2px rgb(155, 152, 152);
+  cursor: pointer;
+}
+main .card .card-body .terms {
+  font-size: 11px;
+  margin: 0.3rem 1.5rem;
+  margin-top: 0.8rem;
+  text-align: center;
+  color: var(--color_n2);
+}
+main .card .card-body .terms b {
+  color: rgb(255, 47, 47);
+}
+
+.attribution {
+  margin-top: 2rem;
+  font-size: 16px;
+  text-align: center;
+  color: white;
+  margin-bottom: 1rem;
+}
+.attribution a {
+  color: hsl(228deg, 41%, 71%);
+  text-decoration: none;
+}
+.attribution a:hover {
+  color: blueviolet;
+  font-weight: 700;
+}
+
+@media (min-width: 64rem) {
+  body {
+    margin: 0 auto;
+  }
+  main {
+    max-width: 64rem;
+    margin: 0 auto;
+    display: flex;
+    height: 80vh;
+    align-items: center;
+  }
+  main .text-main {
+    text-align: left;
+  }
+  main .text-main h1 {
+    font-size: 35px;
+    padding: 0;
+    line-height: 1.1;
+  }
+  main .text-main p {
+    font-size: 18px;
+    padding: 0;
+    margin-top: 2rem;
+  }
+}
+@media (min-width: 95rem) {
+  body {
+    width: 90rem;
+    margin: 0 auto;
+  }
+  main {
+    display: flex;
+    height: 80vh;
+    align-items: center;
+  }
+  main .card {
+    width: 1200px;
+  }
+  main .text-main {
+    text-align: left;
+    margin-left: -2.5rem;
+  }
+  main .text-main h1 {
+    font-size: 50px;
+    line-height: 1.1;
+  }
+  main .text-main p {
+    font-size: 18px;
+    padding: 0;
+    margin-top: 2rem;
+  }
+}/*# sourceMappingURL=style.css.map */

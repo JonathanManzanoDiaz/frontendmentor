@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+
+// Colors
+:root {
+    // Primary
+    --color_1: hsl(158, 36%, 37%);
+    --color_2: hsl(30, 38%, 92%);
+    // Neutral
+    --color_n1: hsl(212, 21%, 14%);
+    --color_n2: hsl(228, 12%, 48%);
+    --color_n3: hsl(0, 0%, 100%);
+}
+
+
+body {
+    background-color: hsl(158, 52%, 40%);
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90vh;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.card_container {
+    width: 19.5rem;
+    border-radius: 10px;
+    background-color: white;
+
+    .img-header1 {
+        background-image: url('../images/image-product-mobile.jpg');
+        height: 200px;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        background-size: 100%;
+
+    }
+
+    .img-header2 {
+        display: none;
+    }
+
+    .card {
+        padding: 1.5rem;
+
+        h1 {
+            font-size: 26px;
+            font-family: 'Fraunces', serif;
+
+        }
+
+        h3 {
+            text-transform: uppercase;
+            font-weight: 500;
+            color: var(--color_n2);
+            letter-spacing: 5px;
+            font-size: 14px;
+            margin-top: 1px;
+        }
+
+        p {
+            font-size: 14px;
+            color: var(--color_n2);
+            line-height: 1.5;
+        }
+
+        .price {
+            display: flex;
+            align-items: center;
+            text-indent: 20px;
+            margin-left: -1rem;
+
+            h2 {
+                font-family: 'Fraunces', serif;
+                font-size: 30px;
+                color: var(--color_1)
+            }
+
+            h4 {
+                font-size: 12px;
+                color: var(--color_n2);
+            }
+        }
+
+        .btn {
+            margin-top: -.5rem;
+            height: 45px;
+            line-height: 35px;
+            width: 100%;
+            background-color: var(--color_1);
+            border: 0;
+            border-radius: 10px;
+            color: var(--color_n3);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-indent: 10px;
+
+            img {
+                margin-top: -3px;
+            }
+        }
+    }
+}
+
+
+//MQUERIES 
+
+@media (min-width: 48rem) {
+    .card_container {
+        display: grid;
+        width: 35rem;
+        grid-template-columns: 1fr 1fr;
+        margin-left: 0.5rem;
+
+        .img-header1 {
+            display: none;
+        }
+
+        .img-header2 {
+            display: block;
+            background-image: url('../images/image-product-desktop.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            background-size: 300px;
+        }
+
+    }
+}
+
+
+// ATRIBUTTION
+.attribution {
+    margin-top: 1rem;
+    font-size: 18px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+}
+
+.attribution a:hover {
+    color: darkviolet;
+    text-decoration: underline;
+}
