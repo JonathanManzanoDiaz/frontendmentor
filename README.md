@@ -37,3 +37,5 @@ CHALLENGES of frontendmentor.io
 - [INTERACTIVE CARD DETAILS FORM](https://jonathanmanzanodiaz.github.io/frontendmentor/interactive-card-details-form).
 
 - [EXPENSES CHART COMPONENT](https://jonathanmanzanodiaz.github.io/frontendmentor/expenses-chart-component).
+
+- [NOTIFICATION PAGE](https://jonathanmanzanodiaz.github.io/frontendmentor/notifications-page-main).
