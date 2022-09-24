@@ -1,6 +1,6 @@
 # frontendmentor
 
-CHALLENGES of [Front-End Mentor](https://www.frontendmentor.io/challenges)
+[Challenges of Front-End Mentor](https://www.frontendmentor.io/challenges)
 
 # CHALLENGES
 
