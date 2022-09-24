@@ -2,7 +2,7 @@
 
 [Challenges of Front-End Mentor](https://www.frontendmentor.io/challenges)
 
-# CHALLENGES
+# CHALLENGES COMPLETED FROM SCRATCH WITH STYLE GUIDE 
 
 - [NFT PREVIEW AND COMPONENT](https://jonathanmanzanodiaz.github.io/frontendmentor/001-nft-preview-card-component)
 
