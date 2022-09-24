@@ -1,41 +1,41 @@
 # frontendmentor
 
-CHALLENGES of frontendmentor.io
+CHALLENGES of - [Front-End Mentor](https://jonathanmanzanodiaz.github.io/frontendmentor)
 
 # CHALLENGES
 
-- [NFT PREVIEW AND COMPONENT](https://jonathanmanzanodiaz.github.io/frontendmentor/001-nft-preview-card-component)
+- [NFT PREVIEW AND COMPONENT](https://jonathanmanzanodiaz.github.io/frontendmentor/ALL-CHALLENGES/001-nft-preview-card-component)
 
-- [ORDER SUMMARY COMPONENT](https://jonathanmanzanodiaz.github.io/frontendmentor/002-order-summary-component)
+- [ORDER SUMMARY COMPONENT](https://jonathanmanzanodiaz.github.io/frontendmentor/ALL-CHALLENGES/002-order-summary-component)
 
-- [PROFILE CARD COMPONENT](https://jonathanmanzanodiaz.github.io/frontendmentor/003-profile-card-component)
+- [PROFILE CARD COMPONENT](https://jonathanmanzanodiaz.github.io/frontendmentor/ALL-CHALLENGES/003-profile-card-component)
 
-- [STATS PREVIEW CARD COMPONENT](https://jonathanmanzanodiaz.github.io/frontendmentor/004-stats-preview-card-component).
+- [STATS PREVIEW CARD COMPONENT](https://jonathanmanzanodiaz.github.io/frontendmentor/ALL-CHALLENGES/004-stats-preview-card-component).
 
-- [FAQ ACCORDION CARD](https://jonathanmanzanodiaz.github.io/frontendmentor/005-faq-accordion-card).
+- [FAQ ACCORDION CARD](https://jonathanmanzanodiaz.github.io/frontendmentor/ALL-CHALLENGES/005-faq-accordion-card).
 
-- [3 COLUMN PREVIEW CARD COMPONENT](https://jonathanmanzanodiaz.github.io/frontendmentor/006-three-column-preview-card-component).
+- [3 COLUMN PREVIEW CARD COMPONENT](https://jonathanmanzanodiaz.github.io/frontendmentor/ALL-CHALLENGES/006-three-column-preview-card-component).
 
-- [FOUR CARD FEATURE SECTION](https://jonathanmanzanodiaz.github.io/frontendmentor/007-four-card-feature-section).
+- [FOUR CARD FEATURE SECTION](https://jonathanmanzanodiaz.github.io/frontendmentor/ALL-CHALLENGES/007-four-card-feature-section).
 
-- [ARTICLE PREVIEW COMPONENT](https://jonathanmanzanodiaz.github.io/frontendmentor/008-article-preview-component).
+- [ARTICLE PREVIEW COMPONENT](https://jonathanmanzanodiaz.github.io/frontendmentor/ALL-CHALLENGES/008-article-preview-component).
 
-- [BASE APPAREL COMING SOON](https://jonathanmanzanodiaz.github.io/frontendmentor/009-base-apparel-coming-soon).
+- [BASE APPAREL COMING SOON](https://jonathanmanzanodiaz.github.io/frontendmentor/ALL-CHALLENGES/009-base-apparel-coming-soon).
 
-- [PRODUCT PREVIEW CARD COMPONENT](https://jonathanmanzanodiaz.github.io/frontendmentor/010-product-preview-card-component).
+- [PRODUCT PREVIEW CARD COMPONENT](https://jonathanmanzanodiaz.github.io/frontendmentor/ALL-CHALLENGES/010-product-preview-card-component).
 
-- [SOCIAL PROOF SECTION](https://jonathanmanzanodiaz.github.io/frontendmentor/011-social-proof-section).
+- [SOCIAL PROOF SECTION](https://jonathanmanzanodiaz.github.io/frontendmentor/ALL-CHALLENGES/011-social-proof-section).
 
-- [SINGLE PRICE GRID COMPONENT](https://jonathanmanzanodiaz.github.io/frontendmentor/012-single-price-grid-component).
+- [SINGLE PRICE GRID COMPONENT](https://jonathanmanzanodiaz.github.io/frontendmentor/ALL-CHALLENGES/012-single-price-grid-component).
 
-- [INTRO COMPONENT WITH SIGNUP FORM](https://jonathanmanzanodiaz.github.io/frontendmentor/013-intro-component-with-signup-form).
+- [INTRO COMPONENT WITH SIGNUP FORM](https://jonathanmanzanodiaz.github.io/frontendmentor/ALL-CHALLENGES/013-intro-component-with-signup-form).
 
-- [PING COMING SOON PAGE](https://jonathanmanzanodiaz.github.io/frontendmentor/014-ping-coming-soon-page).
+- [PING COMING SOON PAGE](https://jonathanmanzanodiaz.github.io/frontendmentor/ALL-CHALLENGES/014-ping-coming-soon-page).
 
-- [HUDDLE LANDING PAGE WITH SINGLE INTRODUCTORY SECTION](https://jonathanmanzanodiaz.github.io/frontendmentor/015-huddle-landing-page-with-single-introductory-section).
+- [HUDDLE LANDING PAGE WITH SINGLE INTRODUCTORY SECTION](https://jonathanmanzanodiaz.github.io/frontendmentor/ALL-CHALLENGES/015-huddle-landing-page-with-single-introductory-section).
 
-- [INTERACTIVE CARD DETAILS FORM](https://jonathanmanzanodiaz.github.io/frontendmentor/016-interactive-card-details-form).
+- [INTERACTIVE CARD DETAILS FORM](https://jonathanmanzanodiaz.github.io/frontendmentor/ALL-CHALLENGES/016-interactive-card-details-form).
 
-- [EXPENSES CHART COMPONENT](https://jonathanmanzanodiaz.github.io/frontendmentor/017-expenses-chart-component).
+- [EXPENSES CHART COMPONENT](https://jonathanmanzanodiaz.github.io/frontendmentor/ALL-CHALLENGES/017-expenses-chart-component).
 
-- [NOTIFICATION PAGE](https://jonathanmanzanodiaz.github.io/frontendmentor/018-notifications-page-main).
+- [NOTIFICATION PAGE](https://jonathanmanzanodiaz.github.io/frontendmentor/ALL-CHALLENGES/018-notifications-page-main).
