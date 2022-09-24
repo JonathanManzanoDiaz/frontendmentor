@@ -1,8 +1,8 @@
 # frontendmentor
 
-CHALLENGES of - [Front-End Mentor](https://jonathanmanzanodiaz.github.io/frontendmentor)
+[Challenges of Front-End Mentor](https://www.frontendmentor.io/challenges)
 
-# CHALLENGES
+# CHALLENGES COMPLETED FROM SCRATCH WITH STYLE GUIDE 
 
 - [NFT PREVIEW AND COMPONENT](https://jonathanmanzanodiaz.github.io/frontendmentor/ALL-CHALLENGES/001-nft-preview-card-component)
 
