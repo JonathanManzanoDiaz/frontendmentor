@@ -1,6 +1,6 @@
 # frontendmentor
 
-CHALLENGES of [Front-End Mentor](https://jonathanmanzanodiaz.github.io/frontendmentor)
+CHALLENGES of [Front-End Mentor](https://www.frontendmentor.io/challenges)
 
 # CHALLENGES
 
