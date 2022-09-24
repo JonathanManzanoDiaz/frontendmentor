@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap");
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+:root {
+  --color_1: hsl(0, 0%, 100%);
+  --color_2: hsl(210, 60%, 98%);
+  --color_3: hsl(211, 68%, 94%);
+  --color_4: hsl(205, 33%, 90%);
+  --color_5: hsl(219, 14%, 63%);
+  --color_6: hsl(219, 12%, 42%);
+  --color_7: hsl(224, 21%, 14%);
+  --color_p1: hsl(1, 90%, 64%);
+  --color_p2: hsl(219, 85%, 26%);
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main {
+  min-width: 17rem;
+  max-width: 39rem;
+  margin: 1rem;
+}
+main header {
+  display: flex;
+  justify-content: space-between;
+}
+main header .not {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+}
+main header .not h1 {
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+}
+main header .not h1 span {
+  background-color: var(--color_p2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.2rem 0.5rem;
+  width: 35px;
+  height: 25px;
+  line-height: 10px;
+  margin-left: 0.5rem;
+  color: white;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+main header .mark {
+  margin-top: 0.1rem;
+  font-size: 14px;
+  color: var(--color_6);
+}
+main header .mark:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+main .card {
+  margin-top: 0.8rem;
+  display: flex;
+  padding: 1rem;
+  gap: 15px;
+  font-size: 14px;
+  border-radius: 10px;
+}
+main .card p {
+  font-size: 14px;
+}
+main .card .ago {
+  margin-top: 0.2rem;
+  color: var(--color_5);
+}
+main .card img {
+  width: 40px;
+  height: 40px;
+}
+main .card .card-body .hello {
+  margin-top: 1rem;
+  border-radius: 3px;
+  border: 1px solid var(--color_4);
+  padding: 1rem;
+  color: var(--color_7);
+}
+main .card b {
+  font-size: 15px;
+}
+main .cardN {
+  background-color: var(--color_3);
+  position: relative;
+}
+main .cardN .dot {
+  height: 10px;
+  width: 10px;
+  border-radius: 50px;
+  background-color: var(--color_p1);
+  color: var(--color_p1);
+  position: absolute;
+  right: 15px;
+  top: calc(50% - 5px);
+  box-shadow: 0 0 3px var(--color_p1);
+}
+main .cardN:hover {
+  background-color: var(--color_4);
+  cursor: pointer;
+}
+main .cardN:active {
+  background-color: var(--color_2);
+}
+
+p {
+  color: var(--color_6);
+}
+p b {
+  color: black;
+}
+
+.cardKim {
+  margin-top: 0.5rem;
+  position: relative;
+}
+.cardKim .card-body {
+  display: flex;
+  padding: 0 3.5rem 0 0;
+}
+.cardKim .card-body .imgDiv {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+}
+
+@media (min-width: 25rem) {
+  body {
+    background-color: var(--color_3);
+  }
+  main {
+    padding: 1.5rem;
+    border-radius: 10px;
+    background-color: var(--color_1);
+  }
+}
+.attribution {
+  margin-bottom: 1rem;
+  font-size: 16px;
+  text-align: center;
+}
+.attribution a {
+  color: darkviolet;
+  text-decoration: none;
+}
+.attribution a:hover {
+  text-decoration: underline;
+}/*# sourceMappingURL=style.css.map */
