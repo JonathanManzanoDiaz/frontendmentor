@@ -1,4 +1,3 @@
-// MENU HAMB OPEN START
 $(".hamb").click(() => {
   $("#navMobile").removeClass("show");
   $("body").css("background-color", "rgba(0, 0, 0, 0.8)");
@@ -17,14 +16,14 @@ $(".close").click(() => {
 $(".features").click(() => {
   if ($(".submenu1").hasClass("show")) {
     $(".submenu1").removeClass("show");
-    $(".imgArr").attr("src", "/public/images/icon-arrow-up.svg");
+    $(".imgArr").attr("src", "images/icon-arrow-up.svg");
   }
   // SUBMENU FEATURE OPEN END
 
   // SUBMENU FEATURE CLOSE START
   else {
     $(".submenu1").addClass("show");
-    $(".imgArr").attr("src", "/public/images/icon-arrow-down.svg");
+    $(".imgArr").attr("src", "images/icon-arrow-down.svg");
   }
   // SUBMENU FEATURE CLOSE END
 });
@@ -34,14 +33,14 @@ $(".company").click(() => {
   if ($(".submenu2").hasClass("show")) {
     $(".submenu2").removeClass("show");
 
-    $(".imgArr2").attr("src", "/public/images/icon-arrow-up.svg");
+    $(".imgArr2").attr("src", "images/icon-arrow-up.svg");
   }
   // SUBMENU COMNPANY OPEN END
 
   // SUBMENU COMNPANY CLOSE START
   else {
     $(".submenu2").addClass("show");
-    $(".imgArr2").attr("src", "/public/images/icon-arrow-down.svg");
+    $(".imgArr2").attr("src", "images/icon-arrow-down.svg");
   }
   // SUBMENU COMNPANY CLOSE END
 });
@@ -50,20 +49,20 @@ $(".company").click(() => {
 
 $(".featuresDesk").click(() => {
   if ($(".subDesk1").hasClass("show")) {
-    $(".imgArr3").attr("src", "/public/images/icon-arrow-up.svg");
+    $(".imgArr3").attr("src", "images/icon-arrow-up.svg");
     $(".subDesk1").removeClass("show");
   } else {
-    $(".imgArr3").attr("src", "/public/images/icon-arrow-down.svg");
+    $(".imgArr3").attr("src", "images/icon-arrow-down.svg");
     $(".subDesk1").addClass("show");
   }
 });
 
 $(".companyDesk").click(() => {
   if ($(".subDesk2").hasClass("show")) {
-    $(".imgArr4").attr("src", "/public/images/icon-arrow-up.svg");
+    $(".imgArr4").attr("src", "images/icon-arrow-up.svg");
     $(".subDesk2").removeClass("show");
   } else {
-    $(".imgArr4").attr("src", "/public/images/icon-arrow-down.svg");
+    $(".imgArr4").attr("src", "images/icon-arrow-down.svg");
     $(".subDesk2").addClass("show");
   }
 });
