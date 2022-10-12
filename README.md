@@ -2,7 +2,7 @@
 
 [Challenges of Front-End Mentor](https://www.frontendmentor.io/challenges)
 
-# CHALLENGES COMPLETED WITH STYLE GUIDE 
+# CHALLENGES COMPLETED WITH STYLE GUIDE
 
 - [NFT PREVIEW AND COMPONENT](https://jonathanmanzanodiaz.github.io/frontendmentor/ALL-CHALLENGES/001-nft-preview-card-component)
 
@@ -39,3 +39,5 @@
 - [EXPENSES CHART COMPONENT](https://jonathanmanzanodiaz.github.io/frontendmentor/ALL-CHALLENGES/017-expenses-chart-component).
 
 - [NOTIFICATION PAGE](https://jonathanmanzanodiaz.github.io/frontendmentor/ALL-CHALLENGES/018-notifications-page-main).
+
+- [INTRO SECTION WITH DROPDOWN NAVIGATION](https://jonathanmanzanodiaz.github.io/frontendmentor/ALL-CHALLENGES/019-intro-section-with-dropdown-navigation).
