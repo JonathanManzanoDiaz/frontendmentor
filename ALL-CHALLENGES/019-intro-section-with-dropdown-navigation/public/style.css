@@ -1,0 +1,315 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap");
+body {
+  font-family: "Epilogue", sans-serif;
+  background-color: var(--color_1);
+}
+
+p {
+  font-size: 18px;
+}
+
+:root {
+  --color_1: hsl(0, 0%, 98%);
+  --color_2: hsl(0, 0%, 41%);
+  --color_3: hsl(0, 0%, 8%);
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color_2);
+}
+
+.head-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 1rem;
+}
+
+#navMobile {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: var(--color_1);
+}
+#navMobile .close {
+  padding: 1rem;
+  width: 55px;
+}
+#navMobile ul {
+  list-style: none;
+  padding: 0;
+  margin: -0.5rem 1.5rem;
+  width: 190px;
+  font-size: 18px;
+  height: 100vh;
+}
+#navMobile ul li {
+  margin-top: 1.8rem;
+  display: flex;
+  color: var(--color_2);
+  align-items: center;
+  gap: 5px;
+}
+#navMobile ul li:first-child {
+  gap: 9px;
+}
+#navMobile ul .submenu1,
+#navMobile ul .submenu2 {
+  margin-top: 1rem;
+  margin-left: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  font-size: 18px;
+}
+#navMobile ul .submenu1 .remind,
+#navMobile ul .submenu2 .remind {
+  margin-left: 1px;
+}
+#navMobile ul .submenu1 .remind img,
+#navMobile ul .submenu2 .remind img {
+  margin-right: 2px;
+}
+#navMobile .login {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+#navMobile .login button {
+  width: 100%;
+  border: 0;
+  font-size: 14px;
+  padding: 0.2rem 0.5rem;
+  margin-top: 0.2rem;
+  background-color: transparent;
+  height: 40px;
+  font-weight: 700;
+  color: var(--color_2);
+}
+#navMobile .login .signupBtn {
+  border: 1.5px solid black;
+  border-radius: 10px;
+}
+
+.show {
+  display: none !important;
+}
+
+.features,
+.company,
+.featuresDesk,
+.companyDesk {
+  cursor: pointer;
+}
+
+.hero img {
+  width: 100%;
+}
+
+.text {
+  text-align: center;
+}
+.text h1 {
+  font-size: 2.2rem;
+}
+.text p {
+  padding: 1rem 0.2rem;
+  font-size: 1.1rem;
+}
+.text .learnBtn {
+  padding: 0.8rem 1.8rem;
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: black;
+  color: white;
+  border: 0;
+  border-radius: 12px;
+}
+
+footer .imgFooterMobile {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+footer .imgFooterMobile img {
+  width: 80px;
+}
+footer .imgFooterMobile img:nth-child(2) {
+  width: 60px;
+}
+
+.attribution {
+  font-size: 18px;
+  text-align: center;
+  margin-top: 4rem;
+}
+.attribution a {
+  color: blue;
+}
+.attribution a:hover {
+  font-weight: 700;
+  color: darkviolet;
+}
+
+#navDesktop,
+.loginDesk,
+.hero-desktop,
+.imgFooterDesktop {
+  display: none;
+}
+
+@media (min-width: 64rem) {
+  body {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  header {
+    display: flex;
+    align-items: center;
+    padding: 0rem 1rem;
+    margin-top: 1rem;
+  }
+  header .hamb {
+    display: none;
+  }
+  header #navDesktop {
+    display: flex;
+    align-items: center;
+    margin-left: 4rem;
+    margin-top: -0.5rem;
+    font-size: 1.2rem;
+  }
+  header #navDesktop ul {
+    display: flex;
+    gap: 40px;
+    list-style-type: none;
+  }
+  header #navDesktop ul li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  header .loginDesk {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 1rem;
+    margin-right: 2rem;
+  }
+  header .loginDesk button {
+    border: 0;
+    margin-top: 0.2rem;
+    font-size: 1.1rem;
+    background-color: transparent;
+    font-weight: 700;
+    color: var(--color_2);
+    padding: 0.5rem 1.3rem;
+    margin-top: -1.5rem;
+  }
+  header .loginDesk .signupBtn {
+    border: 1.2px solid black;
+    border-radius: 10px;
+  }
+  main {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  main #mobileShow {
+    display: none !important;
+  }
+  main .hero {
+    margin-top: 2rem;
+    width: 60%;
+  }
+  main .hero .hero-mobile {
+    display: none;
+  }
+  main .hero .hero-desktop {
+    display: block;
+    width: 550px;
+    height: 700px;
+    margin-left: 150px;
+  }
+  main .text {
+    text-align: left;
+    width: 430px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 10rem;
+  }
+  main .text h1 {
+    font-size: 4rem;
+  }
+  main .text p {
+    margin-top: 1rem;
+  }
+  main .text button {
+    margin-top: 2rem;
+  }
+  main .imgFooterDesktop {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 3rem;
+  }
+  main .imgFooterDesktop img {
+    width: 100px;
+  }
+  main .imgFooterDesktop img:nth-child(2) {
+    width: 80px;
+  }
+  footer .imgFooterMobile {
+    display: none;
+  }
+}
+.subDesk1 {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 70px;
+  border-radius: 8px;
+  left: 380px;
+  box-shadow: 0 0 4px gray;
+  padding: 1rem 1.5rem;
+  background-color: white;
+  width: 165px;
+  font-size: 18px;
+}
+.subDesk1 a {
+  margin-top: 0.8rem;
+}
+
+.subDesk2 {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 70px;
+  border-radius: 8px;
+  left: 560px;
+  box-shadow: 0 0 4px gray;
+  padding: 1rem;
+  background-color: white;
+}
+.subDesk2 a {
+  margin-top: 1rem;
+}/*# sourceMappingURL=style.css.map */

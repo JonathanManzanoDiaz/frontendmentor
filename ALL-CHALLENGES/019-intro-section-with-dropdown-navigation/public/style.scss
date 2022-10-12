@@ -1,0 +1,433 @@
+// TYPO AND COLORS START
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+
+body {
+  font-family: 'Epilogue', sans-serif;
+  background-color: var(--color_1);
+}
+
+p {
+  font-size: 18px;
+}
+
+:root {
+  --color_1: hsl(0, 0%, 98%);
+  --color_2: hsl(0, 0%, 41%);
+  --color_3: hsl(0, 0%, 8%);
+}
+
+// TYPO AND COLORS END
+
+
+
+// RESET START
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color_2);
+}
+
+// RESET END
+
+
+// ----- HEADER -------- START 
+// HEADER START
+
+.head-header {
+  // POSITION OF LOGO AND HAMBURGER MENU
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 1rem;
+}
+
+// HEADER END
+
+
+// NAVBAR START
+
+
+
+
+#navMobile {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: var(--color_1);
+
+  .close {
+    padding: 1rem;
+    width: 55px;
+
+  }
+
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: -.5rem 1.5rem;
+    width: 190px;
+    font-size: 18px;
+    height: 100vh;
+
+
+    li {
+      margin-top: 1.8rem;
+      display: flex;
+      color: var(--color_2);
+      align-items: center;
+      gap: 5px;
+
+
+    }
+
+    li:first-child {
+      gap: 9px
+    }
+
+    .submenu1,
+    .submenu2 {
+      margin-top: 1rem;
+      margin-left: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+
+
+      gap: 10px;
+      font-size: 18px;
+
+      .remind {
+        margin-left: 1px;
+
+        img {
+          margin-right: 2px;
+        }
+      }
+    }
+  }
+
+  .login {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 1rem;
+
+    button {
+      width: 100%;
+      border: 0;
+      font-size: 14px;
+      padding: .2rem .5rem;
+      margin-top: .2rem;
+      background-color: transparent;
+      height: 40px;
+      font-weight: 700;
+      color: var(--color_2);
+    }
+
+    .signupBtn {
+      border: 1.5px solid black;
+      border-radius: 10px;
+    }
+  }
+}
+
+// NAVBAR END
+
+.show {
+  display: none !important;
+}
+
+.features,
+.company,
+.featuresDesk,
+.companyDesk {
+
+  cursor: pointer;
+}
+
+// ----- HEADER -------- END
+
+
+// ----- MAIN -------- START
+
+//HERO IMAGE START
+
+.hero {
+  img {
+    width: 100%;
+  }
+}
+
+//HERO IMAGE END
+
+.text {
+  text-align: center;
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  p {
+    padding: 1rem .2rem;
+    font-size: 1.1rem;
+  }
+
+  .learnBtn {
+    padding: .8rem 1.8rem;
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: black;
+    color: white;
+    border: 0;
+    border-radius: 12px;
+  }
+}
+
+// ----- MAIN -------- END
+
+
+// ----- FOOTER -------- START
+
+footer {
+
+
+  .imgFooterMobile {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    img {
+
+      width: 80px;
+
+    }
+
+    img:nth-child(2) {
+      width: 60px;
+    }
+  }
+}
+
+// ----- FOOTER -------- END
+
+
+// ATTRIBUTION
+.attribution {
+  font-size: 18px;
+  text-align: center;
+  margin-top: 4rem;
+
+  a {
+    color: blue;
+  }
+
+  a:hover {
+    font-weight: 700;
+    color: darkviolet;
+  }
+}
+
+#navDesktop,
+.loginDesk,
+.hero-desktop,
+.imgFooterDesktop {
+  display: none
+}
+
+@media (min-width: 64rem) {
+  body {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    padding: 0rem 1rem;
+    margin-top: 1rem;
+
+    .hamb {
+      display: none;
+    }
+
+    #navDesktop {
+      display: flex;
+      align-items: center;
+      margin-left: 4rem;
+      margin-top: -.5rem;
+      font-size: 1.2rem;
+
+
+      ul {
+        display: flex;
+        gap: 40px;
+        list-style-type: none;
+
+        li {
+          display: flex;
+          align-items: center;
+          gap: 8px
+        }
+      }
+
+
+
+
+    }
+
+    .loginDesk {
+      display: flex;
+      justify-content: flex-end;
+      gap: 20px;
+      width: 100%;
+      margin: 0 auto;
+      margin-top: 1rem;
+      margin-right: 2rem;
+
+      button {
+        border: 0;
+        margin-top: .2rem;
+        font-size: 1.1rem;
+        background-color: transparent;
+        font-weight: 700;
+        color: var(--color_2);
+        padding: .5rem 1.3rem;
+        margin-top: -1.5rem;
+      }
+
+      .signupBtn {
+        border: 1.2px solid black;
+        border-radius: 10px;
+      }
+    }
+  }
+
+  main {
+    display: flex;
+    flex-direction: row-reverse;
+
+    #mobileShow {
+      display: none !important
+    }
+
+
+    .hero {
+      margin-top: 2rem;
+      width: 60%;
+
+      .hero-mobile {
+        display: none;
+      }
+
+      .hero-desktop {
+        display: block;
+        width: 550px;
+        height: 700px;
+        margin-left: 150px;
+      }
+
+    }
+
+
+    .text {
+      text-align: left;
+      width: 430px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-direction: column;
+      margin-left: 10rem;
+
+      h1 {
+        font-size: 4rem;
+      }
+
+      p {
+        margin-top: 1rem;
+      }
+
+      button {
+        margin-top: 2rem;
+      }
+    }
+
+    .imgFooterDesktop {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 3rem;
+
+
+      img {
+        width: 100px;
+      }
+
+      img:nth-child(2) {
+        width: 80px;
+      }
+    }
+
+
+  }
+
+  footer {
+
+    .imgFooterMobile {
+      display: none;
+    }
+  }
+
+
+}
+
+.subDesk1 {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 70px;
+  border-radius: 8px;
+  left: 380px;
+  box-shadow: 0 0 4px gray;
+  padding: 1rem 1.5rem;
+  background-color: white;
+  width: 165px;
+  font-size: 18px;
+
+
+  a {
+    margin-top: .8rem;
+  }
+
+}
+
+.subDesk2 {
+
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 70px;
+  border-radius: 8px;
+  left: 560px;
+  box-shadow: 0 0 4px gray;
+  padding: 1rem;
+  background-color: white;
+
+  a {
+    margin-top: 1rem;
+  }
+}
