@@ -1,0 +1,146 @@
+// TYPO AND COLORS START
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+:root {
+  // Primary
+
+  --color_p1: hsl(193, 38%, 86%);
+  --color_p2: hsl(150, 100%, 66%);
+
+  // Neutral
+
+  --color_n1: hsl(217, 19%, 38%);
+  --color_n2: hsl(217, 19%, 24%);
+  --color_n3: hsl(218, 23%, 16%);
+}
+
+// TYPO AND COLORS END
+
+
+// RESET START
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+  background-color: var(--color_n3);
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+// RESET END
+
+
+
+// MAIN START
+main {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.container {
+  text-align: center;
+  margin: 3rem;
+  min-width: 320px;
+  max-width: 500px;
+  padding: 2.5rem 1.5rem;
+  background-color: var(--color_n2);
+  position: relative;
+  border-radius: 10px;
+
+  h5 {
+    color: var(--color_p2);
+    font-size: .7rem;
+    letter-spacing: 4px;
+  }
+
+  p {
+    margin-top: 1rem;
+    color: var(--color_p1);
+    font-size: 20px
+  }
+
+  .patternDesk {
+    display: none
+  }
+
+  .patternMobile {
+
+    margin-top: 1rem;
+    width: 100%
+  }
+
+  .dice {
+    position: absolute;
+    bottom: -20px;
+    z-index: 1;
+    left: calc(50% - 22px);
+    height: 45px;
+    width: 45px;
+    border-radius: 50px;
+    background-color: var(--color_p2);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 20px;
+    }
+  }
+}
+
+
+
+// MAIN END
+
+
+
+// ATTRIBUTION START
+
+.attribution {
+  margin-top: .5rem;
+  font-size: 18px;
+  text-align: center;
+  color: white;
+
+  a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+    color: var(--color_p2);
+  }
+
+  a:hover {
+    text-decoration: underline
+  }
+}
+
+// ATTRIBUTION END
+
+@media (min-width: 48rem) {
+  .container {
+
+    .patternDesk {
+      display: block;
+      margin-top: 1.5rem;
+    }
+
+    .patternMobile {
+      display: none
+    }
+  }
+
+}

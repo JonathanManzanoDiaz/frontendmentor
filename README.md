@@ -41,3 +41,5 @@
 - [NOTIFICATION PAGE](https://jonathanmanzanodiaz.github.io/frontendmentor/ALL-CHALLENGES/018-notifications-page-main).
 
 - [INTRO SECTION WITH DROPDOWN NAVIGATION](https://jonathanmanzanodiaz.github.io/frontendmentor/ALL-CHALLENGES/019-intro-section-with-dropdown-navigation).
+
+- [ADVICE GENERATOR APP](https://jonathanmanzanodiaz.github.io/frontendmentor/ALL-CHALLENGES/020-advice-generator-app).
