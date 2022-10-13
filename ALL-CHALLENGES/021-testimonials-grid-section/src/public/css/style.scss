@@ -1,0 +1,264 @@
+// TYPO AND COLOR START
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+:root {
+  // Primary
+  --color_p1: hsl(263, 55%, 52%);
+  --color_p2: hsl(217, 19%, 35%);
+  --color_p3: hsl(219, 29%, 14%);
+  --color_p4: hsl(0, 0%, 100%);
+
+  // Neutral
+  --color_n1: hsl(0, 0%, 81%);
+  --color_n2: hsl(210, 46%, 95%);
+
+}
+
+body {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  background-color: var(--color_n2);
+  ;
+}
+
+// TYPO AND COLOR END
+// RESET START
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+
+h1 {
+  text-align: center;
+}
+
+// RESET END
+.card-container {
+  padding: 1.5rem;
+
+  .card {
+    padding: 2rem;
+    margin-top: 1.5rem;
+    border-radius: 8px;
+
+    .perfil {
+      gap: 20px;
+      display: flex;
+      align-items: center;
+
+      img {
+        width: 35px;
+        border-radius: 50px;
+        border: 1px solid var(--color_n1);
+      }
+    }
+
+    h2 {
+      margin-top: .8rem;
+    }
+
+    .pLong {
+      font-size: 14px;
+      margin-top: 1rem;
+    }
+  }
+
+}
+
+.card1 {
+  background-color: var(--color_p1);
+  background-image: url('/src/images/bg-pattern-quotation.svg');
+  background-position: top right 20px;
+  background-repeat: no-repeat;
+
+  h2 {
+    color: var(--color_n2);
+    font-size: 20px;
+  }
+
+  h4 {
+    color: var(--color_n2);
+    opacity: 0.8
+  }
+
+  p {
+    opacity: 0.5;
+    color: var(--color_n2);
+  }
+
+  .pLong {
+    font-size: 13px;
+    color: var(--color_n2);
+  }
+}
+
+.card2 {
+  background-color: var(--color_p2);
+
+  h2 {
+    color: var(--color_n2);
+    font-size: 20px;
+  }
+
+  h4 {
+    color: var(--color_n2);
+    opacity: 0.8
+  }
+
+  p {
+    opacity: 0.5;
+    color: var(--color_n2);
+
+
+  }
+
+  .pLong {
+    font-size: 13px;
+    color: var(--color_n2);
+  }
+}
+
+.card3 {
+  background-color: var(--color_p4);
+
+  h2 {
+    color: var(--color_p3);
+    font-size: 20px;
+  }
+
+  h4 {
+    color: var(--color_p3);
+    opacity: 0.8
+  }
+
+  p {
+    opacity: 0.5;
+    color: var(--color_p3);
+
+
+  }
+
+  .pLong {
+    font-size: 13px;
+    color: var(--color_p3);
+  }
+}
+
+.card4 {
+  background-color: var(--color_p3);
+
+  h2 {
+    color: var(--color_p4);
+    font-size: 20px;
+  }
+
+  h4 {
+    color: var(--color_p4);
+    opacity: 0.8
+  }
+
+  p {
+    opacity: 0.5;
+    color: var(--color_n2);
+  }
+
+
+  .pLong {
+    font-size: 13px;
+    color: var(--color_n2);
+  }
+}
+
+.card5 {
+  background-color: var(--color_p4);
+
+  h2 {
+    color: var(--color_p3);
+    font-size: 20px;
+  }
+
+  h4 {
+    color: var(--color_p3);
+    opacity: 0.8
+  }
+
+  p {
+    opacity: 0.5;
+    color: var(--color_p3);
+
+
+  }
+
+  .pLong {
+    font-size: 13px;
+    color: var(--color_p3);
+  }
+}
+
+// ATTRIBUTION START
+
+
+.attribution {
+  font-size: 18px;
+  text-align: center;
+
+  color: black;
+
+  a {
+    color: blue;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+    font-size: 600;
+  }
+}
+
+// ATTRIBUTION END
+
+
+// MQUERIES
+
+
+@media (min-width: 64rem) {
+  body {
+    max-width: 1440px;
+    margin: 0 auto
+  }
+
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+
+    .card1 {
+      grid-column: 1/3;
+      grid-row: 1/2;
+    }
+
+    .card2 {
+      grid-row: 1/2;
+    }
+
+    .card3 {
+      margin-top: -.5rem;
+      grid-column: 1/2;
+      grid-row: 2/3;
+    }
+
+    .card4 {
+      margin-top: -.5rem;
+      grid-column: 2/4;
+    }
+
+    .card5 {
+      grid-column: 4/5;
+      grid-row: 1/3;
+    }
+  }
+
+}

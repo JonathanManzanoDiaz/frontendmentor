@@ -43,3 +43,5 @@
 - [INTRO SECTION WITH DROPDOWN NAVIGATION](https://jonathanmanzanodiaz.github.io/frontendmentor/ALL-CHALLENGES/019-intro-section-with-dropdown-navigation).
 
 - [ADVICE GENERATOR APP](https://jonathanmanzanodiaz.github.io/frontendmentor/ALL-CHALLENGES/020-advice-generator-app).
+
+- [TESTIMONIAL GRID SECTION](https://jonathanmanzanodiaz.github.io/frontendmentor/ALL-CHALLENGES/021-testimonials-grid-section).
