@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
+.navDesk {
+  display: none;
+}
+
+@media (min-width: 64rem) {
+  .show {
+    box-shadow: 0 0 0;
+    display: flex;
+  }
+  .icon-menu {
+    display: none;
+  }
+  header {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+  }
+  header .navDesk {
+    display: flex;
+    justify-content: end;
+    background-color: transparent;
+    margin-right: 2rem;
+  }
+  header .navDesk .itemDesk {
+    position: absolute;
+    display: flex;
+    gap: 40px;
+    top: 5px;
+    list-style: none;
+    font-size: 1.4rem;
+    text-align: center;
+  }
+  header .navDesk .itemDesk li {
+    border-bottom: 0;
+  }
+  header .navDesk .itemDesk li:hover {
+    color: hsl(35deg, 77%, 62%);
+    cursor: pointer;
+  }
+  main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  main .mobileImg {
+    display: none;
+  }
+  main .deskImg {
+    display: flex;
+    width: 65%;
+    grid-column: 1/4;
+    grid-row: 1/2;
+  }
+  main #articles {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    margin-top: -12rem;
+  }
+  main #articles article {
+    display: flex;
+    align-items: center;
+  }
+  main #articles article h1 {
+    font-size: 3.5rem;
+  }
+  main #articles article .futureText p {
+    padding: 0 4rem;
+    font-size: 1.1rem;
+    color: hsl(236deg, 13%, 42%);
+  }
+  main #articles article .futureText button {
+    height: 50px;
+    margin: 1.5rem 4rem;
+    font-size: 1.1rem;
+  }
+  main #news {
+    margin: 0 !important;
+    grid-column: 3/4;
+    grid-row: 1/2;
+    width: 95%;
+    height: 100%;
+  }
+  main #news article {
+    margin-top: 2.3rem;
+  }
+  main #tops {
+    grid-column: 1/4;
+    grid-row: 3/4;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+  }
+}
+:root {
+  --color_p1: hsl(35, 77%, 62%);
+  --color_p2: hsl(5, 85%, 63%);
+  --color_n1: hsl(36, 100%, 99%);
+  --color_n2: hsl(233, 8%, 79%);
+  --color_n3: hsl(236, 13%, 42%);
+  --color_n4: hsl(240, 100%, 5%);
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 1.5rem 1rem;
+}
+
+header {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+header .navbarMobile {
+  background-color: white;
+  top: -10px;
+  right: 0px;
+  margin: -1rem;
+  padding: 0;
+  position: absolute;
+  height: 110vh;
+  width: 70%;
+  box-shadow: 0px -50px 200px 150px rgba(0, 0, 0, 0.5);
+}
+header .navbarMobile .btnClose {
+  position: absolute;
+  top: 25px;
+  right: 20px;
+}
+header .navbarMobile .navItems {
+  list-style: none;
+  padding: 1rem;
+  font-size: 1.3rem;
+  margin-top: 5rem;
+  position: relative;
+}
+header .navbarMobile .navItems li {
+  padding: 0.5rem;
+  margin-top: 1rem;
+}
+
+main {
+  margin-top: 1.5rem;
+}
+main img {
+  width: 100%;
+  max-height: 450px;
+}
+main #articles h1 {
+  margin-top: 1rem;
+  font-size: 2.3rem;
+  font-weight: 800;
+}
+main #articles p {
+  margin-top: 1rem;
+}
+main #articles button {
+  margin-top: 1rem;
+  padding: 0.7rem 2rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  background-color: var(--color_p2);
+  color: var(--color_n1);
+  border: 0;
+  font-size: 12px;
+  font-weight: 700;
+}
+main #news {
+  background-color: var(--color_n4);
+  padding: 1rem;
+  margin: 3rem 0;
+}
+main #news h2 {
+  color: var(--color_p1);
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+main #news .newsType h3 {
+  color: var(--color_n1);
+}
+main #news .newsType p {
+  margin-top: 0.5rem;
+  color: var(--color_n2);
+  font-size: 14px;
+}
+main #news hr {
+  margin: 1.5rem 0;
+}
+main #tops article {
+  display: flex;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+main #tops article img {
+  height: 125px;
+  width: 125px;
+}
+main #tops .textTops {
+  margin-left: 1.5rem;
+}
+main #tops .textTops h2 {
+  color: var(--color_n2);
+}
+main #tops .textTops h4 {
+  color: var(--color_n4);
+  font-size: 1.1rem;
+  padding: 0.25rem 0;
+}
+main #tops .textTops p {
+  font-size: 14px;
+}
+
+.attribution {
+  margin-top: 2rem;
+  font-size: 15px;
+  text-align: center;
+  color: blue;
+}
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+  text-decoration: none;
+}
+.attribution a:hover {
+  color: darkviolet;
+  text-decoration: underline;
+}
+
+.show {
+  display: none;
+}
+
+.deskImg {
+  display: none;
+}
+
+@media (min-width: 48rem) {
+  body {
+    max-width: 1300px;
+    margin: 2rem auto;
+  }
+}/*# sourceMappingURL=style.css.map */

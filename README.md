@@ -45,3 +45,5 @@
 - [ADVICE GENERATOR APP](https://jonathanmanzanodiaz.github.io/frontendmentor/ALL-CHALLENGES/020-advice-generator-app).
 
 - [TESTIMONIAL GRID SECTION](https://jonathanmanzanodiaz.github.io/frontendmentor/ALL-CHALLENGES/021-testimonials-grid-section).
+
+- [NEWS HOMEPAGE MAIN](https://jonathanmanzanodiaz.github.io/frontendmentor/ALL-CHALLENGES/022-news-homepage-main).

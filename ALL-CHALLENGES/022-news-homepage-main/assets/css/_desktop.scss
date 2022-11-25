@@ -1,0 +1,120 @@
+.navDesk {
+  display: none;
+}
+
+@media (min-width: 64rem) {
+
+
+  .show {
+    box-shadow: 0 0 0;
+    display: flex;
+  }
+
+  .icon-menu {
+    display: none;
+  }
+
+  header {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+
+    .navDesk {
+      display: flex;
+      justify-content: end;
+      background-color: transparent;
+      margin-right: 2rem;
+
+      .itemDesk {
+        position: absolute;
+        display: flex;
+        gap: 40px;
+        top: 5px;
+        list-style: none;
+        font-size: 1.4rem;
+        text-align: center;
+
+        li {
+          border-bottom: 0;
+        }
+
+        li:hover {
+          color: hsl(35, 77%, 62%);
+          cursor: pointer;
+        }
+      }
+    }
+
+
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    .mobileImg {
+      display: none;
+    }
+
+    .deskImg {
+      display: flex;
+      width: 65%;
+      grid-column: 1/4;
+      grid-row: 1/2;
+
+    }
+
+    #articles {
+
+
+      grid-column: 1/3;
+      grid-row: 2/3;
+      margin-top: -12rem;
+
+      article {
+        display: flex;
+        align-items: center;
+
+        h1 {
+          font-size: 3.5rem;
+        }
+
+        .futureText {
+
+          p {
+            padding: 0 4rem;
+            font-size: 1.1rem;
+            color: hsl(236, 13%, 42%);
+          }
+
+          button {
+            height: 50px;
+            margin: 1.5rem 4rem;
+            font-size: 1.1rem;
+          }
+        }
+      }
+    }
+
+    #news {
+      margin: 0 !important;
+      grid-column: 3/4;
+      grid-row: 1/2;
+      width: 95%;
+      height: 100%;
+
+      article {
+        margin-top: 2.3rem;
+      }
+    }
+
+    #tops {
+      grid-column: 1/4;
+      grid-row: 3/4;
+      display: flex;
+      gap: 40px;
+      justify-content: center;
+    }
+  }
+}
