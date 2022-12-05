@@ -1,0 +1,22 @@
+// COLORS AND TYPO
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+:root {
+  // Primary
+
+  --color_p1: hsl(172, 67%, 45%);
+
+  // Neutral
+
+  --color_n1: hsl(183, 100%, 15%);
+  --color_n2: hsl(186, 14%, 43%);
+  --color_n3: hsl(184, 14%, 56%);
+  --color_n4: hsl(185, 41%, 84%);
+  --color_n5: hsl(189, 41%, 97%);
+  --color_n6: hsl(0, 0%, 100%);
+
+}
+
+body {
+  font-family: 'Space Mono', monospace;
+}

@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color_p1: hsl(172, 67%, 45%);
+  --color_n1: hsl(183, 100%, 15%);
+  --color_n2: hsl(186, 14%, 43%);
+  --color_n3: hsl(184, 14%, 56%);
+  --color_n4: hsl(185, 41%, 84%);
+  --color_n5: hsl(189, 41%, 97%);
+  --color_n6: hsl(0, 0%, 100%);
+}
+
+body {
+  font-family: "Space Mono", monospace;
+}
+
+@media (min-width: 35rem) {
+  body {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  main {
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  main .izq .buttons {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  main .der {
+    width: 90%;
+  }
+}
+body {
+  background-color: var(--color_n4);
+  font-family: "Space Mono", monospace;
+}
+body .logo {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+main {
+  margin-top: 2rem;
+  background-color: var(--color_n6);
+  border-radius: 20px;
+  padding: 1rem;
+}
+main input[type=number]::-webkit-inner-spin-button,
+main input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+          appearance: none;
+  margin: 0;
+}
+main input[type=number] {
+  -webkit-appearance: textfield;
+     -moz-appearance: textfield;
+          appearance: textfield;
+}
+main input {
+  outline: 0;
+}
+main .izq {
+  padding: 0.5rem;
+}
+main .izq .inputData {
+  margin-top: 0.25rem;
+  height: 35px;
+  background-image: url("../images/icon-dollar.svg");
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  border: 0;
+  background-color: var(--color_n5);
+  width: 100%;
+  font-family: "Space Mono", monospace;
+  text-align: right;
+  font-weight: 700;
+  padding: 0.8rem;
+  font-size: 1.15rem;
+}
+main .izq .inputData:last-child {
+  height: 35px;
+  background-image: url("../images/icon-person.svg");
+  background-repeat: no-repeat;
+  background-position: 10px center;
+}
+main .izq .select {
+  margin-top: 1rem;
+}
+main .izq .buttons {
+  margin-top: 0.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+main .izq .buttons .btnTip {
+  height: 40px;
+  width: 95%;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  background-color: var(--color_n1);
+  border: 0;
+  border-radius: 5px;
+  color: var(--color_n6);
+  font-weight: 700;
+}
+main .izq .buttons .custom {
+  height: 40px;
+  width: 95%;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  border: 0;
+  border-radius: 5px;
+  color: var(--color_n6);
+  font-weight: 700;
+  background-color: var(--color_n5);
+  color: var(--color_n2);
+  text-align: center;
+}
+main .izq .buttons .btnTip:hover {
+  background-color: var(--color_p1);
+  color: var(--color_n1);
+  cursor: pointer;
+}
+main .izq .numbPeople {
+  margin-top: 1rem;
+}
+main .der {
+  position: relative;
+  margin-top: 1.5rem;
+  background-color: var(--color_n1);
+  color: var(--color_n5);
+  padding: 1.25rem;
+  border-radius: 15px;
+  height: 220px;
+}
+main .der .textTip {
+  font-size: 0.8rem;
+}
+main .der .textTip p {
+  color: var(--color_n3);
+}
+main .der .tipAmount,
+main .der .personTotal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .der .tipAmount h2,
+main .der .personTotal h2 {
+  color: var(--color_p1);
+}
+main .der .personTotal {
+  margin-top: 1.25rem;
+}
+main .der .reset {
+  position: absolute;
+  width: 90%;
+  height: 40px;
+  margin-top: 1.5rem;
+  background-color: var(--color_p1);
+  border: 0;
+  border-radius: 5px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--color_n1);
+  bottom: 15px;
+  left: 5%;
+}
+main .der .reset:hover {
+  color: var(--color_n2);
+  cursor: pointer;
+}
+
+.attribution {
+  margin-top: 1.5rem;
+  font-size: 18px;
+  text-align: center;
+}
+.attribution a {
+  color: darkviolet;
+  text-decoration: none;
+}
+.attribution a:hover {
+  text-decoration: underline;
+}/*# sourceMappingURL=style.css.map */

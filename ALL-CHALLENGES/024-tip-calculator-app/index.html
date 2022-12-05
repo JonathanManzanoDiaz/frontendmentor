@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/app.js" async></script>
+</head>
+
+<body>
+  <div class="logo">
+    <img src="images/logo.svg" alt="">
+  </div>
+  <main>
+    <section class="izq">
+      <p>Bill</p>
+      <input class="inputData billAmount" type="number">
+      <p class="select">Select Tip %</p>
+      <div class="buttons">
+        <button class="btnTip cinco">5%</button>
+        <button class="btnTip diez">10%</button>
+        <button class="btnTip quince">15%</button>
+        <button class="btnTip veinticinco">25%</button>
+        <button class="btnTip cincuenta">50%</button>
+        <input class="custom" type="number" placeholder="Custom" max="100"></button>
+      </div>
+      <p class="numbPeople">Number of People</p>
+      <input class="inputData numPeople" type="number">
+    </section>
+    <section class="der">
+      <div class="tipAmount">
+        <div class="textTip">
+          <h3>Tip Amount</h3>
+          <p>/ person</p>
+        </div>
+        <div class="numbTip">
+          <h2>$<span class="spanTip">0.00</span></h2>
+        </div>
+      </div>
+      <div class="personTotal">
+        <div class="textTip">
+          <h3>Total</h3>
+          <p>/ person</p>
+        </div>
+        <div class="numbTip">
+          <h2>$<span class="personTip">0.00</span></h2>
+        </div>
+      </div>
+
+      <button class="reset">Reset</button>
+    </section>
+  </main>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    <br>
+    Coded by <a href="github.com/JonathanManzanoDiaz/frontendmentor">Jonathan Manzano Diaz</a>.
+  </div>
+</body>
+
+</html>

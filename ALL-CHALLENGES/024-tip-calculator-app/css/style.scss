@@ -1,0 +1,188 @@
+@import 'reset';
+@import 'colors';
+@import 'mqueries';
+
+body {
+  background-color: var(--color_n4);
+  font-family: 'Space Mono', monospace;
+
+  // LOGO START
+  .logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+
+  // LOGO END
+}
+
+main {
+  margin-top: 2rem;
+  background-color: var(--color_n6);
+  border-radius: 20px;
+  padding: 1rem;
+
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-outer-spin-button {
+    appearance: none;
+    margin: 0;
+  }
+
+  input[type=number] {
+    appearance: textfield;
+  }
+
+  input {
+    outline: 0;
+  }
+
+  .izq {
+    padding: .5rem;
+
+    .inputData {
+      margin-top: .25rem;
+      height: 35px;
+      background-image: url('../images/icon-dollar.svg');
+      background-repeat: no-repeat;
+      background-position: 10px center;
+      border: 0;
+      background-color: var(--color_n5);
+      width: 100%;
+      font-family: 'Space Mono', monospace;
+      text-align: right;
+      font-weight: 700;
+      padding: .8rem;
+      font-size: 1.15rem;
+    }
+
+    .inputData:last-child {
+      height: 35px;
+      background-image: url('../images/icon-person.svg');
+      background-repeat: no-repeat;
+      background-position: 10px center;
+    }
+
+    .select {
+      margin-top: 1rem;
+    }
+
+    .buttons {
+      margin-top: .5rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+
+      .btnTip {
+        height: 40px;
+        width: 95%;
+        margin: 0 auto;
+        font-size: 1.1rem;
+        background-color: var(--color_n1);
+        border: 0;
+        border-radius: 5px;
+        color: var(--color_n6);
+        font-weight: 700;
+      }
+
+      .custom {
+        height: 40px;
+        width: 95%;
+        margin: 0 auto;
+        font-size: 1.1rem;
+        border: 0;
+        border-radius: 5px;
+        color: var(--color_n6);
+        font-weight: 700;
+        background-color: var(--color_n5);
+        color: var(--color_n2);
+        text-align: center;
+      }
+
+      .btnTip:hover {
+        background-color: var(--color_p1);
+        color: var(--color_n1);
+        cursor: pointer;
+      }
+
+
+    }
+
+    .numbPeople {
+      margin-top: 1rem;
+    }
+  }
+
+
+  .der {
+    position: relative;
+    margin-top: 1.5rem;
+    background-color: var(--color_n1);
+    color: var(--color_n5);
+    padding: 1.25rem;
+    border-radius: 15px;
+    height: 220px;
+
+    .textTip {
+      font-size: .8rem;
+
+      p {
+        color: var(--color_n3);
+      }
+    }
+
+    .tipAmount,
+    .personTotal {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      h2 {
+        color: var(--color_p1)
+      }
+    }
+
+    .personTotal {
+      margin-top: 1.25rem;
+    }
+
+    .reset {
+      position: absolute;
+      width: 90%;
+      height: 40px;
+      margin-top: 1.5rem;
+      background-color: var(--color_p1);
+      border: 0;
+      border-radius: 5px;
+      font-size: 1rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: var(--color_n1);
+      bottom: 15px;
+      left: 5%;
+    }
+
+    .reset:hover {
+      color: var(--color_n2);
+      cursor: pointer;
+    }
+  }
+}
+
+// ATRIBUTTION  START
+
+.attribution {
+  margin-top: 1.5rem;
+  font-size: 18px;
+  text-align: center;
+
+  a {
+    color: darkviolet;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+// ATRIBUTTION  END
