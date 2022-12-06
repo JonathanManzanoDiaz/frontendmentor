@@ -50,4 +50,6 @@
 
 - [TIME TRACKING APP](https://jonathanmanzanodiaz.github.io/frontendmentor/ALL-CHALLENGES/023-time-tracking-dashboard).
 
-- [TIP CALCULATOR APP ](https://jonathanmanzanodiaz.github.io/frontendmentor/ALL-CHALLENGES/024-tip-calculator-app).
+- [TIP CALCULATOR APP](https://jonathanmanzanodiaz.github.io/frontendmentor/ALL-CHALLENGES/024-tip-calculator-app).
+
+- [SUNNY AGENCY LANDING PAGE](https://jonathanmanzanodiaz.github.io/frontendmentor/ALL-CHALLENGES/025-sunnyside-agency-landing-page).

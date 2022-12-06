@@ -1,0 +1,68 @@
+@media (min-width: 48rem) {
+
+  body {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+
+
+  main {
+
+    .layout {
+      display: flex;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 50%;
+        order: 1;
+      }
+
+
+      #sec3 {
+
+        order: 1;
+
+        img {
+          width: 50%;
+        }
+      }
+
+
+
+    }
+
+    .layout2 {
+      display: flex;
+      align-items: center;
+
+      .imgMob {
+        display: none;
+      }
+
+      .imgDesk {
+        display: flex;
+      }
+
+
+    }
+  }
+
+  #sec6 {
+    padding: 5rem 2rem;
+
+    h3 {
+      font-size: 1.8rem;
+    }
+
+    .layout3 {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      font-size: 125%;
+    }
+  }
+
+}
