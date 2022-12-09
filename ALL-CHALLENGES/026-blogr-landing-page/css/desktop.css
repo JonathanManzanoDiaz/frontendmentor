@@ -1,0 +1,42 @@
+@media (min-width: 64rem) {
+  .logo {
+    display: none;
+  }
+  body {
+    max-width: 1440px;
+  }
+  .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 1024px;
+    margin: 0 auto;
+    padding: 1rem 3rem !important;
+    position: relative;
+  }
+  .header .menuDesk {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    list-style-type: none;
+    gap: 40px;
+  }
+  .header .hamburger {
+    display: none;
+  }
+  .header .buttonsHeader {
+    position: absolute;
+    right: 10px;
+  }
+  .header .buttonsHeader .buttonLogin {
+    color: white;
+    border: 0;
+  }
+  .header .buttonsHeader .buttonSignUp {
+    background-color: white;
+    padding: 0.5rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}/*# sourceMappingURL=desktop.css.map */

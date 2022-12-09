@@ -1,0 +1,31 @@
+:root {
+  // Primary
+  //Light red (CTA text)
+  --color_p1: hsl(356, 100%, 66%);
+  //Very light red (CTA hover background)
+  --color_p2: hsl(355, 100%, 74%);
+  //Very dark blue (headings)
+  --color_p3: hsl(208, 49%, 24%);
+
+  // Neutral
+  //White (text)
+  --color_n1: hsl(0, 0%, 100%);
+  //Grayish blue (footer text)
+  --color_n2: hsl(240, 2%, 79%);
+  //Very dark grayish blue (body copy)
+  --color_n3: hsl(207, 13%, 34%);
+  //Very dark black blue (footer background)
+  --color_n4: hsl(240, 10%, 16%);
+
+  // Background gradient - Intro/CTA mobile nav:
+  // Very light red
+  --color_bgG1: hsl(13, 100%, 72%);
+  // Light red
+  --color_bgG2: hsl(353, 100%, 62%);
+
+  // Background gradient -body:
+  // Very dark gray blue
+  --color_bgG3: hsl(237, 17%, 21%);
+  // Very dark desaturated blue
+  --color_bgG4: hsl(237, 23%, 32%);
+}
