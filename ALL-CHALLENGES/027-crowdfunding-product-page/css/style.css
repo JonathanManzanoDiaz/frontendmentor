@@ -1,0 +1,418 @@
+@import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap");
+.attribution {
+  margin: 1rem 0;
+  font-size: 18px;
+  text-align: center;
+}
+.attribution a {
+  color: darkviolet;
+  text-decoration: none;
+}
+.attribution a:hover {
+  font-weight: 600;
+}
+
+body {
+  font-family: "Commissioner", sans-serif;
+}
+
+:root {
+  --color_p1: hsl(176, 50%, 47%);
+  --color_p2: hsl(176, 72%, 28%);
+  --color_n1: hsl(0, 0%, 0%);
+  --color_n2: hsl(0, 0%, 48%);
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(250, 247, 247);
+  min-width: 320px;
+}
+
+header {
+  background-image: url("../images/image-hero-mobile.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 30vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  position: relative;
+}
+header .menu {
+  list-style-type: none;
+  background-color: white;
+  border-radius: 5px;
+  width: 90vw;
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  box-shadow: 0 -10px 100px black;
+  z-index: 2;
+}
+header .menu li {
+  padding: 1rem;
+  border-bottom: 0.5px solid rgb(215, 212, 212);
+  font-weight: 500;
+  font-size: 1.15rem;
+}
+
+main #section1 {
+  margin: 1rem;
+  margin-top: -2.5rem;
+  padding: 1rem;
+  position: relative;
+  background-color: white;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 0 1px black;
+}
+main #section1 .logoM {
+  left: calc(50% - 25px);
+  top: -30px;
+  position: absolute;
+}
+main #section1 h1 {
+  font-size: 1.35rem;
+  margin-top: 2rem;
+}
+main #section1 p {
+  font-size: 0.9rem;
+  margin-top: 0.85rem;
+}
+main #section1 .buttonsSec1 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+main #section1 .buttonsSec1 button {
+  margin-top: 1rem;
+}
+main #section1 .buttonsSec1 .backBtn {
+  background: var(--color_p2);
+  padding: 0.8rem 2rem;
+  font-weight: 700;
+  color: white;
+  border: 0;
+  border-radius: 30px;
+  font-size: 0.9rem;
+}
+main #section1 .buttonsSec1 img {
+  margin-top: 1rem;
+  width: 45px;
+}
+main #section1 .buttonsSec1 img:hover {
+  outline: 2px solid blue;
+  border-radius: 30px;
+}
+main #section2 {
+  box-shadow: 0 0 1px black;
+  background-color: white;
+  margin: 1rem;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 8px;
+}
+main #section2 hr {
+  margin: 1rem auto;
+}
+main #section2 .barLarg {
+  margin-top: 2rem;
+  width: 100%;
+}
+main #section3 {
+  margin: 1rem;
+  background-color: white;
+  padding: 1.5rem;
+  box-shadow: 0 0 1px black;
+  border-radius: 8px;
+}
+main #section3 h3 {
+  padding: 1rem 0;
+  color: var(--color_n1);
+}
+main #section3 p {
+  font-size: 0.925rem;
+  color: var(--color_p2);
+}
+main #section3 #subsection1 {
+  margin-top: 2rem;
+}
+main #section3 article {
+  padding: 0.5rem 1.5rem 1.5rem 1.5rem;
+  box-shadow: 0 0 1px black;
+  margin-top: 1rem;
+  border-radius: 5px;
+}
+main #section3 article .titleArticle {
+  padding: 1rem 0;
+}
+main #section3 article p {
+  font-size: 0.9rem;
+}
+main #section3 article .titleLeft {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+main #section3 article .titleLeft h2 {
+  padding: 1rem 0;
+}
+main #section3 article .backBtn {
+  background: var(--color_p2);
+  padding: 0.8rem 1.5rem;
+  font-weight: 700;
+  color: white;
+  border: 0;
+  border-radius: 30px;
+  font-size: 0.75rem;
+  margin-top: 0.25rem;
+}
+main #section3 article .outStock {
+  background: var(--color_p1);
+  padding: 0.8rem 1.5rem;
+  font-weight: 700;
+  color: white;
+  border: 0;
+  border-radius: 30px;
+  font-size: 0.75rem;
+  margin-top: 0.25rem;
+}
+main #section4 {
+  margin: 1rem;
+  background-color: white;
+  padding: 1.5rem;
+  box-shadow: 0 10px 100px 50px black;
+  border-radius: 5px;
+  position: absolute;
+  top: 50px;
+}
+main #section4 .backClose {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main #section4 h3 {
+  padding: 1rem 0;
+  color: var(--color_n1);
+}
+main #section4 p {
+  font-size: 0.925rem;
+  color: var(--color_p2);
+}
+main #section4 #subsection1 .pladge {
+  text-align: center;
+  padding: 0.25rem 0 1rem 0;
+}
+main #section4 #subsection1 .buttonsAllow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+main #section4 #subsection1 .buttonsAllow .backBtn {
+  background-color: var(--color_p1);
+}
+main #section4 #subsection1 .buttonsAllow input {
+  width: 40%;
+  height: 40px;
+  border-radius: 30px;
+  border: 1px solid var(--color_p1);
+  background-image: url("../images/icon-dollar.svg");
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  text-align: right;
+  padding-right: 10px;
+  font-weight: 700;
+  font-size: 1rem;
+}
+main #section4 #subsection1 .radio {
+  display: flex;
+  gap: 15px;
+}
+main #section4 #subsection1 article {
+  padding: 0.5rem 1.5rem 1.5rem 1.5rem;
+  box-shadow: 0 0 1px black;
+  border-radius: 5px;
+  margin: 1.5rem 0;
+}
+main #section4 #subsection1 article .radioBtn {
+  width: 20px;
+}
+main #section4 #subsection1 article .titleArticle {
+  padding: 1rem 0;
+}
+main #section4 #subsection1 article p {
+  font-size: 0.9rem;
+}
+main #section4 #subsection1 article .titleLeft {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+main #section4 #subsection1 article .titleLeft h2 {
+  padding: 1rem 0;
+}
+main #section4 #subsection1 article .backBtn {
+  background: var(--color_p2);
+  padding: 0.8rem 0.5rem;
+  font-weight: 700;
+  color: white;
+  border: 0;
+  border-radius: 30px;
+  font-size: 0.75rem;
+  margin-top: 0.25rem;
+}
+main #section4 #subsection1 article .outStock {
+  background: var(--color_p1);
+  padding: 0.8rem 1.5rem;
+  font-weight: 700;
+  color: white;
+  border: 0;
+  border-radius: 30px;
+  font-size: 0.75rem;
+  margin-top: 0.25rem;
+}
+main #section4 #subsection1 article:first-child {
+  margin: 0.5rem 0;
+}
+main .modalThanks {
+  margin: 1rem auto;
+  background-color: white;
+  padding: 1.5rem;
+  box-shadow: 0 0px 15px black;
+  border-radius: 8px;
+  min-width: 300px;
+  max-width: 500px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 99;
+}
+main h2 {
+  margin-top: 1rem;
+}
+main p {
+  margin-top: 1rem;
+  color: var(--color_n2);
+  font-size: 0.9rem;
+}
+main button {
+  margin-top: 1.5rem;
+  background: var(--color_p1);
+  padding: 0.8rem 2rem;
+  font-weight: 700;
+  color: white;
+  border: 0;
+  border-radius: 30px;
+  font-size: 0.9rem;
+}
+
+.menuDesk {
+  display: none;
+}
+
+.show {
+  display: none;
+}
+
+@media (min-width: 40rem) {
+  header {
+    background-image: url("../images/image-hero-desktop.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 40vh;
+  }
+  header .hamb {
+    display: none;
+  }
+  header .menuDesk {
+    display: flex;
+    list-style-type: none;
+    gap: 30px;
+    color: rgb(146, 241, 12);
+    font-weight: 500;
+    margin: 0 2rem;
+    font-size: 1.5rem;
+  }
+  main {
+    max-width: 40rem;
+    margin: 0 auto;
+  }
+  #section1 .buttonsSec1 {
+    display: flex;
+    gap: 150px !important;
+  }
+  #section2 {
+    display: flex;
+    flex-direction: column;
+  }
+  #section2 .articles {
+    display: flex;
+    gap: 20px;
+    padding: 0 1.5rem;
+    font-size: 125%;
+  }
+  #section2 hr {
+    height: 5vh;
+    width: 1px;
+  }
+  #section3 .titleArticle {
+    margin-top: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #section3 .titleArticle p {
+    margin: 0;
+  }
+  #section3 .deskBot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  #section3 .deskBot .titleLeft p {
+    margin: 0.8rem;
+  }
+  #section3 .deskBot .backBtn {
+    margin-top: 1rem;
+    height: 40px;
+  }
+  #section4 {
+    left: calc(50% - 500px);
+  }
+  #section4 hr {
+    margin-top: 1rem;
+  }
+  #section4 .quantity {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+  }
+  #section4 .quantity input:focus {
+    padding-left: 1rem;
+    outline: 1px solid blue;
+  }
+  #section4 .quantity .buttonsAllow {
+    display: flex;
+    justify-content: end;
+  }
+  #section4 .quantity .buttonsAllow .backBtn {
+    width: 125px;
+  }
+}/*# sourceMappingURL=style.css.map */

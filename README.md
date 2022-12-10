@@ -55,3 +55,5 @@
 - [SUNNY AGENCY LANDING PAGE](https://jonathanmanzanodiaz.github.io/frontendmentor/ALL-CHALLENGES/025-sunnyside-agency-landing-page).
 
 - [BLOGR LANDING PAGE](https://jonathanmanzanodiaz.github.io/frontendmentor/ALL-CHALLENGES/026-blogr-landing-page).
+
+- [CROWFUNDING PRODUCT PAGE](https://jonathanmanzanodiaz.github.io/frontendmentor/ALL-CHALLENGES/027-crowdfunding-product-page).

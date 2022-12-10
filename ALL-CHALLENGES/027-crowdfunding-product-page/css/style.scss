@@ -1,0 +1,488 @@
+@import 'atributtion';
+@import 'typography';
+@import 'colors';
+@import 'reset';
+
+body {
+  background-color: rgb(250, 247, 247);
+  min-width: 320px;
+}
+
+header {
+  background-image: url('../images/image-hero-mobile.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 30vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  position: relative;
+
+
+  .menu {
+    list-style-type: none;
+    background-color: white;
+    border-radius: 5px;
+    width: 90vw;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    box-shadow: 0 -10px 100px black;
+    z-index: 2;
+
+    li {
+
+      padding: 1rem;
+      border-bottom: .5px solid rgb(215, 212, 212);
+      font-weight: 500;
+      font-size: 1.15rem;
+    }
+  }
+
+}
+
+main {
+
+  #section1 {
+    margin: 1rem;
+    margin-top: -2.5rem;
+    padding: 1rem;
+    position: relative;
+    background-color: white;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 1px black;
+
+    .logoM {
+      left: calc(50% - 25px);
+      top: -30px;
+      position: absolute;
+    }
+
+    h1 {
+      font-size: 1.35rem;
+      margin-top: 2rem;
+    }
+
+    p {
+      font-size: .9rem;
+      margin-top: .85rem;
+    }
+
+    .buttonsSec1 {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      justify-content: center;
+
+      button {
+        margin-top: 1rem;
+      }
+
+      .backBtn {
+        background: var(--color_p2);
+        padding: .8rem 2rem;
+        font-weight: 700;
+        color: white;
+        border: 0;
+        border-radius: 30px;
+        font-size: .9rem;
+      }
+
+      img {
+
+        margin-top: 1rem;
+        width: 45px;
+      }
+
+      img:hover {
+        outline: 2px solid blue;
+        border-radius: 30px;
+      }
+
+    }
+  }
+
+  #section2 {
+    box-shadow: 0 0 1px black;
+    background-color: white;
+    margin: 1rem;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 8px;
+
+    hr {
+      margin: 1rem auto
+    }
+
+    .barLarg {
+      margin-top: 2rem;
+      width: 100%;
+    }
+  }
+
+  #section3 {
+    margin: 1rem;
+    background-color: white;
+    padding: 1.5rem;
+    box-shadow: 0 0 1px black;
+    border-radius: 8px;
+
+    h3 {
+      padding: 1rem 0;
+      color: var(--color_n1);
+
+    }
+
+    p {
+      font-size: .925rem;
+      color: var(--color_p2);
+    }
+
+    #subsection1 {
+      margin-top: 2rem;
+    }
+
+    article {
+      padding: 0.5rem 1.5rem 1.5rem 1.5rem;
+      box-shadow: 0 0 1px black;
+      margin-top: 1rem;
+      border-radius: 5px;
+
+      .titleArticle {
+        padding: 1rem 0;
+      }
+
+      p {
+        font-size: .9rem;
+      }
+
+      .titleLeft {
+        h2 {
+          padding: 1rem 0;
+        }
+
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .backBtn {
+        background: var(--color_p2);
+        padding: .8rem 1.5rem;
+        font-weight: 700;
+        color: white;
+        border: 0;
+        border-radius: 30px;
+        font-size: .75rem;
+        margin-top: .25rem;
+      }
+
+      .outStock {
+        background: var(--color_p1);
+        padding: .8rem 1.5rem;
+        font-weight: 700;
+        color: white;
+        border: 0;
+        border-radius: 30px;
+        font-size: .75rem;
+        margin-top: .25rem;
+      }
+    }
+  }
+
+  #section4 {
+    .backClose {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    margin: 1rem;
+    background-color: white;
+    padding: 1.5rem;
+    box-shadow: 0 10px 100px 50px black;
+    border-radius: 5px;
+    position: absolute;
+    top: 50px;
+
+    h3 {
+      padding: 1rem 0;
+      color: var(--color_n1);
+
+    }
+
+    p {
+      font-size: .925rem;
+      color: var(--color_p2);
+    }
+
+    #subsection1 {
+
+      .pladge {
+        text-align: center;
+        padding: .25rem 0 1rem 0;
+      }
+
+      .buttonsAllow {
+        display: flex;
+        align-items: center;
+
+        .backBtn {
+          background-color: var(--color_p1);
+        }
+
+        gap: 10px;
+
+        input {
+          width: 40%;
+          height: 40px;
+          border-radius: 30px;
+          border: 1px solid var(--color_p1);
+          background-image: url('../images/icon-dollar.svg');
+          background-repeat: no-repeat;
+          background-position: 10px center;
+          text-align: right;
+          padding-right: 10px;
+          font-weight: 700;
+          font-size: 1rem;
+        }
+      }
+
+      .radio {
+        display: flex;
+        gap: 15px
+      }
+
+      article {
+
+
+        padding: 0.5rem 1.5rem 1.5rem 1.5rem;
+        box-shadow: 0 0 1px black;
+        border-radius: 5px;
+        margin: 1.5rem 0;
+
+        .radioBtn {
+          width: 20px;
+        }
+
+        .titleArticle {
+          padding: 1rem 0;
+        }
+
+        p {
+          font-size: .9rem;
+        }
+
+        .titleLeft {
+          h2 {
+            padding: 1rem 0;
+          }
+
+          display: flex;
+          align-items: center;
+          gap: 10px;
+        }
+
+        .backBtn {
+          background: var(--color_p2);
+          padding: .8rem .5rem;
+          font-weight: 700;
+          color: white;
+          border: 0;
+          border-radius: 30px;
+          font-size: .75rem;
+          margin-top: .25rem;
+        }
+
+        .outStock {
+          background: var(--color_p1);
+          padding: .8rem 1.5rem;
+          font-weight: 700;
+          color: white;
+          border: 0;
+          border-radius: 30px;
+          font-size: .75rem;
+          margin-top: .25rem;
+        }
+      }
+
+      article:first-child {
+        margin: .5rem 0;
+      }
+    }
+  }
+
+  .modalThanks {
+    margin: 1rem auto;
+    background-color: white;
+    padding: 1.5rem;
+    box-shadow: 0 0px 15px black;
+    border-radius: 8px;
+    min-width: 300px;
+    max-width: 500px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 99;
+  }
+
+  h2 {
+    margin-top: 1rem;
+  }
+
+  p {
+    margin-top: 1rem;
+    color: var(--color_n2);
+    font-size: .9rem;
+  }
+
+  button {
+    margin-top: 1.5rem;
+    background: var(--color_p1);
+    padding: .8rem 2rem;
+    font-weight: 700;
+    color: white;
+    border: 0;
+    border-radius: 30px;
+    font-size: .9rem;
+  }
+
+}
+
+.menuDesk {
+  display: none;
+}
+
+.show {
+  display: none
+}
+
+@media (min-width: 40rem) {
+  header {
+    background-image: url('../images/image-hero-desktop.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 40vh;
+
+    .hamb {
+      display: none;
+
+
+    }
+
+    .menuDesk {
+      display: flex;
+      list-style-type: none;
+      gap: 30px;
+      color: rgb(146, 241, 12);
+      font-weight: 500;
+      margin: 0 2rem;
+      font-size: 1.5rem;
+    }
+
+  }
+
+  main {
+    max-width: 40rem;
+    margin: 0 auto
+  }
+
+  #section1 {
+    .buttonsSec1 {
+      display: flex;
+      gap: 150px !important;
+
+    }
+  }
+
+  #section2 {
+    display: flex;
+    flex-direction: column;
+
+    .articles {
+      display: flex;
+      gap: 20px;
+      padding: 0 1.5rem;
+      font-size: 125%;
+
+    }
+
+
+    hr {
+
+      height: 5vh;
+      width: 1px;
+    }
+  }
+
+  #section3 {
+    .titleArticle {
+      margin-top: .5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      p {
+        margin: 0;
+      }
+    }
+
+    .deskBot {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 1rem;
+
+      .titleLeft {
+        p {
+
+          margin: 0.8rem;
+        }
+      }
+
+      .backBtn {
+        margin-top: 1rem;
+        height: 40px;
+      }
+    }
+
+
+  }
+
+  #section4 {
+    left: calc(50% - 500px);
+
+    hr {
+      margin-top: 1rem;
+    }
+
+    .quantity {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 1rem;
+
+      input:focus {
+        padding-left: 1rem;
+        outline: 1px solid blue;
+      }
+
+      .buttonsAllow {
+        display: flex;
+        justify-content: end;
+
+        .backBtn {
+          width: 125px;
+        }
+      }
+    }
+  }
+
+}
