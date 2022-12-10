@@ -1,10 +1,12 @@
-// A $( document ).ready() block.
-$(document).ready(function () {
-  const close = document.querySelector(".close");
-  const menu = document.querySelector(".menu");
-  const headingLi = document.querySelectorAll(".headingLi");
-  const menuBox = document.querySelectorAll(".menuBox2");
-  $("#hamb").click(function () {
-    $("#menu").toggle("show");
-  });
+const hamb = document.querySelector(".hamburger");
+const menu = document.querySelector(".menu");
+
+hamb.addEventListener("click", () => {
+  if (menu.classList.contains("show")) {
+    menu.classList.remove("show");
+    hamb.setAttribute("src", "./images/icon-close.svg");
+  } else {
+    menu.classList.add("show");
+    hamb.setAttribute("src", "./images/icon-hamburger.svg");
+  }
 });
