@@ -11,13 +11,16 @@
   <title>Frontend Mentor | [Blogr]</title>
   <link rel="stylesheet" href="css/style.css">
   <script src="js/app.js" async></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
 </head>
 
 <body>
   <header>
     <div class="header">
       <img class="logo" src="images/logo.svg" alt="">
-      <img class="hamburger" src="images/icon-hamburger.svg" alt="">
+      <img id="hamb" class="hamburger" src="images/icon-hamburger.svg" alt="">
+      <img class="close show" src="images/icon-close.svg" alt="">
       <ul class="menuDesk">
 
         <img class="logo1" src="images/logo.svg" alt="">
@@ -55,7 +58,7 @@
       </ul>
 
     </div>
-    <nav class="menu show">
+    <nav id="menu" class="menu show">
       <ul class="menuBox">
         <li class="product headingLi">Product <img src="images/icon-arrow-dark.svg" alt="">
           <ul class="menuBox2 show">
@@ -200,6 +203,8 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. <br>
     Coded by <a href="github.com/JonathanManzanoDiaz/frontendmentor">Jonathan Manzano Diaz</a>.
   </div>
+
+
 </body>
 
 </html>
