@@ -14,24 +14,21 @@
 *::before {
   padding: 0;
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   width: 18rem;
   margin: 0 auto;
   padding: 3rem 0;
   background-color: var(--color_N3);
 }
-
 body h1 {
   font-weight: 300;
   color: var(--color_N1);
   font-size: 23px;
 }
-
 body p {
   margin-top: 1rem;
   color: var(--color_N2);
@@ -45,13 +42,11 @@ body p {
   border-top: 4px solid var(--color_2);
   border-radius: 7px;
   background-color: white;
-  -webkit-box-shadow: 0 0 4px 2px var(--color_2);
-          box-shadow: 0 0 4px 2px var(--color_2);
+  box-shadow: 0 0 4px 2px var(--color_2);
   padding: 2rem;
   position: relative;
   height: 230px;
 }
-
 .card1 img {
   position: absolute;
   right: 25px;
@@ -61,13 +56,11 @@ body p {
   border-top: 4px solid var(--color_1);
   border-radius: 7px;
   background-color: white;
-  -webkit-box-shadow: 0 0 4px 2px var(--color_2);
-          box-shadow: 0 0 4px 2px var(--color_2);
+  box-shadow: 0 0 4px 2px var(--color_2);
   padding: 2rem;
   position: relative;
   height: 230px;
 }
-
 .card2 img {
   position: absolute;
   right: 25px;
@@ -77,13 +70,11 @@ body p {
   border-top: 4px solid var(--color_3);
   border-radius: 7px;
   background-color: white;
-  -webkit-box-shadow: 0 0 4px 2px var(--color_2);
-          box-shadow: 0 0 4px 2px var(--color_2);
+  box-shadow: 0 0 4px 2px var(--color_2);
   padding: 2rem;
   position: relative;
   height: 230px;
 }
-
 .card3 img {
   position: absolute;
   right: 25px;
@@ -93,13 +84,11 @@ body p {
   border-top: 4px solid var(--color_4);
   border-radius: 7px;
   background-color: white;
-  -webkit-box-shadow: 0 0 4px 2px var(--color_2);
-          box-shadow: 0 0 4px 2px var(--color_2);
+  box-shadow: 0 0 4px 2px var(--color_2);
   padding: 2rem;
   position: relative;
   height: 230px;
 }
-
 .card4 img {
   position: absolute;
   right: 25px;
@@ -121,12 +110,9 @@ body p {
     font-size: 18px;
   }
   .card_container {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
-    -ms-grid-rows: (100px)[4];
-        grid-template-rows: repeat(4, 100px);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 100px);
     gap: 30px;
     margin-top: 2rem;
   }
@@ -142,35 +128,19 @@ body p {
     margin: 1rem;
   }
   .card1 {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
     grid-column: 1/2;
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 2;
     grid-row: 2/4;
   }
   .card2 {
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 1;
     grid-column: 2/3;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 1;
     grid-row: 1/2;
   }
   .card3 {
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 1;
     grid-column: 2/3;
-    -ms-grid-row: 3;
-    -ms-grid-row-span: 1;
     grid-row: 3/4;
   }
   .card4 {
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 1;
     grid-column: 3/4;
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 1;
     grid-row: 2/3;
   }
   .attribution a:hover {
@@ -178,7 +148,6 @@ body p {
     font-weight: 600;
   }
 }
-
 .attribution {
   margin-top: 5rem;
   font-size: 18px;
@@ -186,6 +155,5 @@ body p {
 }
 
 .attribution a {
-  color: #3e52a3;
-}
-/*# sourceMappingURL=style.css.map */
+  color: hsl(228deg, 45%, 44%);
+}/*# sourceMappingURL=style.css.map */

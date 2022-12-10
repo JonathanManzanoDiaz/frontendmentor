@@ -66,6 +66,9 @@ header .menu li {
   font-size: 1.15rem;
 }
 
+main .navDesk {
+  display: none;
+}
 main #section1 {
   margin: 1rem;
   margin-top: -2.5rem;
@@ -338,6 +341,9 @@ main button {
   }
   header .hamb {
     display: none;
+  }
+  header .navDesk {
+    display: flex;
   }
   header .menuDesk {
     display: flex;

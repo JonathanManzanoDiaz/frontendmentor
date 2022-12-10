@@ -92,7 +92,6 @@ main .text_pri p {
   body {
     height: 100vh;
   }
-
   main {
     width: 64rem;
     display: grid;
@@ -107,7 +106,6 @@ main .text_pri p {
     font-size: 50px;
     margin-left: -20px;
   }
-
   .rate {
     display: flex;
     flex-direction: column;
@@ -127,7 +125,6 @@ main .text_pri p {
   .rate .rated3 {
     margin-left: 50px;
   }
-
   .cards {
     display: flex;
     grid-column: 1/5;

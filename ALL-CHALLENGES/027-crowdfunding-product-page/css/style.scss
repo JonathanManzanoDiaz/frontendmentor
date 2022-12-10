@@ -44,6 +44,9 @@ header {
 }
 
 main {
+  .navDesk {
+    display: none
+  }
 
   #section1 {
     margin: 1rem;
@@ -375,6 +378,10 @@ main {
       display: none;
 
 
+    }
+
+    .navDesk {
+      display: flex;
     }
 
     .menuDesk {

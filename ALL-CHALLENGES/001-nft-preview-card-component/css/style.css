@@ -17,27 +17,17 @@ p {
 }
 
 body {
-  font-family: 'Outfit', sans-serif;
+  font-family: "Outfit", sans-serif;
   background-color: var(--color_bg);
   min-width: 16.25rem;
   padding: 0;
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   height: 99vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .card {
@@ -45,7 +35,6 @@ body {
   background-color: var(--card_bg);
   border-radius: 10px;
 }
-
 .card .profile {
   text-align: center;
   position: relative;
@@ -57,62 +46,44 @@ body {
   margin: 1rem auto;
   border-radius: 10px;
 }
-
 .card .profile:hover {
-  background-image: url(../images/icon-view.svg), -webkit-gradient(linear, left top, left bottom, from(rgba(150, 150, 150, 0.4))), url(../images//image-equilibrium.jpg);
   background-image: url(../images/icon-view.svg), linear-gradient(rgba(150, 150, 150, 0.4)), url(../images//image-equilibrium.jpg);
   background-size: 40%, 100%, 100%;
   background-repeat: no-repeat;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
 .text_card h1 {
-  padding: .8rem 1.5rem 0 1.5rem;
+  padding: 0.8rem 1.5rem 0 1.5rem;
   color: var(--colorp_2);
   font-size: 18px;
 }
-
 .text_card p {
   color: var(--colorp_1);
   font-size: 14px;
-  padding: .8rem 1.5rem 1rem 1.5rem;
+  padding: 0.8rem 1.5rem 1rem 1.5rem;
 }
 
 .flex_text {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   margin-left: 5px;
   padding: 0 1.5rem;
 }
-
 .flex_text h4 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   text-indent: 5px;
   font-size: 14px;
   color: var(--colorp_2);
 }
-
 .flex_text p {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   color: var(--colorp_1);
   text-indent: 5px;
   font-size: 14px;
-  padding-right: .5rem;
+  padding-right: 0.5rem;
 }
 
 .bar {
@@ -123,24 +94,18 @@ body {
 }
 
 .profile-b {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding: 0 1.5rem 1rem 1.5rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   font-size: 13px;
   text-indent: 15px;
   color: var(--colorp_1);
   font-weight: 300;
 }
-
 .profile-b strong {
   color: var(--white);
   font-weight: 300;
 }
-
 .profile-b img {
   width: 25px;
   border: 1px solid white;
@@ -162,5 +127,4 @@ body {
 .attribution a:hover {
   text-decoration: underline;
   color: blue;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

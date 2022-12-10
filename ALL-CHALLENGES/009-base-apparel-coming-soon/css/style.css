@@ -126,7 +126,6 @@ body {
     align-items: center;
     height: 80vh;
   }
-
   .card_container {
     width: 48rem;
     display: flex;
@@ -158,11 +157,9 @@ body {
     width: 120px;
     height: 25px;
   }
-
   .header-img1 {
     display: none;
   }
-
   .header-img2 {
     display: block;
     order: 1;
