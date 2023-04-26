@@ -57,3 +57,5 @@
 - [BLOGR LANDING PAGE](https://jonathanmanzanodiaz.github.io/frontendmentor/ALL-CHALLENGES/026-blogr-landing-page).
 
 - [CROWFUNDING PRODUCT PAGE](https://jonathanmanzanodiaz.github.io/frontendmentor/ALL-CHALLENGES/027-crowdfunding-product-page).
+
+- [RESULTS SUMMARY COMPONENT](https://jonathanmanzanodiaz.github.io/frontendmentor/ALL-CHALLENGES/028-results-summary-component).
